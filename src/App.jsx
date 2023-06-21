@@ -8,12 +8,12 @@ import Search from './components/search/Search';
 import Countries from "./data.json"
 
 function App() {
-  const [searchResults, setSearchResults] = useState("");
+  const [keyword, setKeyWord] = useState("");
   const [filter, setFilter] = useState("");
 
   const handleSearchResults = () => {
     return (<Search
-        searchResults={searchResults}
+        keyword={keyword}
     />)
   }
 
@@ -24,8 +24,9 @@ function App() {
     <input
       type="text"
       name="searchbar"
-      value={searchResults}
-      onChange={(e) => setSearchResults(e.target.value)}
+      placeholder='Search For Country'
+      value={keyword}
+      onChange={(e) => setKeyWord(e.target.value)}
     />
     
     <>

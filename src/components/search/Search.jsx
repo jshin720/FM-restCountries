@@ -1,14 +1,20 @@
 import React from 'react';
 import Countries from "../../data.json"
 
-function Search({searchResults}) {
+function Search({keyword}) {
 
-  console.log(searchResults)
-  
+  console.log(keyword)
+
+  const searchResults = () => {
+
+    const results = Countries.filter((country) => country.name.toLowerCase().includes(keyword.toLowerCase()))
+    console.log('results', results)
+    
+  }
 
   return (
     <div>
-      
+      {searchResults()}
     </div>
   );
 }

@@ -11,7 +11,7 @@ function App() {
   const [keyword, setKeyWord] = useState("");
   const [filter, setFilter] = useState("");
 
-  const handleSearchResults = () => {
+  const searchResults = () => {
     return (<Search
         keyword={keyword}
     />)
@@ -20,21 +20,25 @@ function App() {
 
   return (
     <>
-    <h1>page loading</h1>
-    <input
-      type="text"
-      name="searchbar"
-      placeholder='Search For Country'
-      value={keyword}
-      onChange={(e) => setKeyWord(e.target.value)}
-    />
-    
-    <>
-    {handleSearchResults()}
+      <h1>page loading</h1>
+      <input
+        type="text"
+        name="searchbar"
+        placeholder="Search For A Country"
+        value={keyword}
+        onChange={(e) => setKeyWord(e.target.value)}
+      />
+      <label for="filter">Filter by Region</label>
+      <select name="filter" id="filter">
+        <option value="Africa">Africa</option>
+        <option value="America">America</option>
+        <option value="Asia">Asia</option>
+        <option value="Europe">Europe</option>
+        <option value="Oceania">Oceania</option>
+      </select>
+      <>{searchResults()}</>
     </>
-     
-    </>
-  )
+  );
 }
 
 export default App

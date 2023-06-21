@@ -32,25 +32,7 @@ function App() {
     <>
     {handleSearchResults()}
     </>
-      {/* <div>
-        {
-          Countries.map(country => {
-            return (
-              <div className='country-container'>
-                <img src={country.flags.svg}></img>
-                <span>
-                <p>{country.name}</p>
-                <p>Population: {country.population}</p>
-                <p>Region: {country.region}</p>
-                <p>Capital: {country.capital}</p>
-                </span>
-              </div>
-
-            )
-          })
-  
-        }
-      </div> */}
+     
     </>
   )
 }

@@ -10,13 +10,30 @@ import Countries from "./data.json"
 function App() {
   const [keyword, setKeyWord] = useState("");
   const [filter, setFilter] = useState("");
+  const [searchType, setSearchType] = useState(null);
 
-  const searchResults = () => {
-    return (<Search
-        keyword={keyword}
-    />)
+  const handleOnChange = (e) => {
+    console.log("event", e)
+    // const {name, value} = e.target;
+    
+    // setSearchType(name)
+
+    // if (name === "searchbar") {
+    //   setKeyWord(value);
+    // } else {
+    //   setFilter(value);
+    // }
+    // return (<Search
+    //     keyword={keyword}
+    //     filter={filter}
+    //     searchType={searchType}
+    // />)
+
   }
 
+  const filterResults = () => {
+   
+  }
 
   return (
     <>
@@ -26,17 +43,17 @@ function App() {
         name="searchbar"
         placeholder="Search For A Country"
         value={keyword}
-        onChange={(e) => setKeyWord(e.target.value)}
+        onChange={handleOnChange}
       />
-      <label for="filter">Filter by Region</label>
-      <select name="filter" id="filter">
+      <label htmlFor="filter">Filter by Region</label>
+      <select name="filter" id="filter" onChange={handleOnChange}>
         <option value="Africa">Africa</option>
         <option value="America">America</option>
         <option value="Asia">Asia</option>
         <option value="Europe">Europe</option>
         <option value="Oceania">Oceania</option>
       </select>
-      <>{searchResults()}</>
+      <>{handleOnChange()}</>
     </>
   );
 }

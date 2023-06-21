@@ -4,17 +4,31 @@ import Header from './components/header/Header.jsx';
 import Main from './components/main/main.jsx';
 import Index from './components/index/Index.jsx'
 
-import Countries from "../public/data.json"
+import Countries from "./data.json"
 
 function App() {
   const [count, setCount] = useState(0)
+  const [searchResults, setSearchResults] = useState([]);
+  const [filter, setFilter] = useState([]);
 
   return (
     <>
+    <h1>page loading</h1>
       <div>
         {
           Countries.map(country => {
-            console.log("Country", country)
+            return (
+              <div className='country-container'>
+                <img src={country.flags.svg}></img>
+                <span>
+                <p>{country.name}</p>
+                <p>Population: {country.population}</p>
+                <p>Region: {country.region}</p>
+                <p>Capital: {country.capital}</p>
+                </span>
+              </div>
+
+            )
           })
   
         }

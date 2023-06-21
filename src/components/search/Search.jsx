@@ -1,6 +1,11 @@
 import React from 'react';
+import Countries from "../../data.json"
 
-function Search() {
+function Search({searchResults}) {
+
+  console.log(searchResults)
+  
+
   return (
     <div>
       

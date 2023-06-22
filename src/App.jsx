@@ -13,7 +13,7 @@ function App() {
   const [searchType, setSearchType] = useState(null);
 
   const handleOnChange = (e) => {
-    console.log("event", e)
+    console.log("event", e.target)
     // const {name, value} = e.target;
     
     // setSearchType(name)
@@ -29,10 +29,6 @@ function App() {
     //     searchType={searchType}
     // />)
 
-  }
-
-  const filterResults = () => {
-   
   }
 
   return (
@@ -53,7 +49,25 @@ function App() {
         <option value="Europe">Europe</option>
         <option value="Oceania">Oceania</option>
       </select>
-      <>{handleOnChange()}</>
+      <div>
+        {!keyword || !filter ? (
+          Countries.map((country) => {
+            return (
+              <div className="country-container">
+                <img src={country.flags.svg}></img>
+                <span>
+                  <p>{country.name}</p>
+                  <p>Population: {country.population}</p>
+                  <p>Region: {country.region}</p>
+                  <p>Capital: {country.capital}</p>
+                </span>
+              </div>
+            );
+          })
+        ) : (
+          <>{handleOnChange()}</>
+        )}
+      </div>
     </>
   );
 }

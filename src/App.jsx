@@ -10,24 +10,42 @@ import Countries from "./data.json"
 function App() {
   const [keyword, setKeyWord] = useState("");
   const [filter, setFilter] = useState("");
-  const [searchType, setSearchType] = useState(null);
+  const [searchType, setSearchType] = useState("");
 
   const handleOnChange = (e) => {
-    console.log("event", e.target)
-    // const {name, value} = e.target;
-    
-    // setSearchType(name)
+    console.log("e",e)
+    if (!e) {
+      Countries.map((country) => {
+        return (
+          <div className="country-container">
+            <img src={country.flags.svg}></img>
+            <span>
+              <p>{country.name}</p>
+              <p>Population: {country.population}</p>
+              <p>Region: {country.region}</p>
+              <p>Capital: {country.capital}</p>
+            </span>
+          </div>
+        );
+      });
+    } 
 
-    // if (name === "searchbar") {
-    //   setKeyWord(value);
-    // } else {
-    //   setFilter(value);
-    // }
-    // return (<Search
-    //     keyword={keyword}
-    //     filter={filter}
-    //     searchType={searchType}
-    // />)
+    const {name, value} = e.target;
+    setSearchType(name)
+    console.log("event", name, value)
+    
+
+    if (name === "searchbar") {
+      setKeyWord(value);
+    } else {
+      setFilter(value);
+    }
+    
+    return (<Search
+        keyword={keyword}
+        filter={filter}
+        searchType={searchType}
+    />)
 
   }
 
@@ -50,23 +68,7 @@ function App() {
         <option value="Oceania">Oceania</option>
       </select>
       <div>
-        {!keyword || !filter ? (
-          Countries.map((country) => {
-            return (
-              <div className="country-container">
-                <img src={country.flags.svg}></img>
-                <span>
-                  <p>{country.name}</p>
-                  <p>Population: {country.population}</p>
-                  <p>Region: {country.region}</p>
-                  <p>Capital: {country.capital}</p>
-                </span>
-              </div>
-            );
-          })
-        ) : (
-          <>{handleOnChange()}</>
-        )}
+         {handleOnChange()}
       </div>
     </>
   );

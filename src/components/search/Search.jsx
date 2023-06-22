@@ -1,19 +1,19 @@
 import React from 'react';
 import Countries from "../../data.json"
 
-function Search({keyword}) {
+function Search({keyword, filter, searchType}) {
 
-  console.log(keyword)
+  console.log(keyword, filter, searchType)
 
   const searchResults = () => {
 
-    const results = Countries.filter((country) => country.name.toLowerCase().includes(keyword.toLowerCase()));
+    const sResults = Countries.filter((country) => country.name.toLowerCase().includes(keyword.toLowerCase()));
     console.log('results', results)
 
     return (
       <div>
         {
-          results.map(country => {
+          sResults.map(country => {
             return (
               <div className='country-container'>
                 <img src={country.flags.svg}></img>
@@ -31,6 +31,14 @@ function Search({keyword}) {
       </div> 
     );
     
+  }
+
+  const filterResult = () => {
+    const fResult = Countries.filter((country) => 
+      country.region === filter
+    )
+
+    console.log("f-result", fResult)
   }
 
   return (

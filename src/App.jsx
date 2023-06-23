@@ -8,9 +8,9 @@ import Search from "./components/search/Search";
 import Countries from "./data.json";
 
 function App() {
-  const [keyword, setKeyWord] = useState("");
-  const [filter, setFilter] = useState("");
-  const [searchType, setSearchType] = useState("");
+  const [keyword, setKeyWord] = useState('');
+  const [filter, setFilter] = useState(null);
+  const [searchType, setSearchType] = useState(null);
 
   const handleOnChange = (e) => {
     console.log("e", e.target.id);
@@ -20,10 +20,10 @@ function App() {
 
     if (searchType === "search") {
       setKeyWord(e.target.value);
-      setFilter("")
+      setFilter("default")
     } else {
       setFilter(e.target.value);
-      setKeyWord("")
+      setKeyWord('')
     }
   };
 
@@ -40,7 +40,8 @@ function App() {
       />
       <label htmlFor="filter">Filter by Region</label>
       <select name="filter" id="filter" onChange={handleOnChange}>
-        <option defaultValue="Africa">Africa</option>
+        <option defaultValue="default">Pick a Region</option>
+        <option value="Africa">Africa</option>
         <option value="Americas">America</option>
         <option value="Asia">Asia</option>
         <option value="Europe">Europe</option>

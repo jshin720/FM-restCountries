@@ -3,12 +3,12 @@ import Countries from "../../data.json"
 
 function Search({keyword, filter, searchType}) {
 
-  console.log(keyword, filter, searchType)
+  console.log("search component",keyword, filter, searchType)
 
   const searchResults = () => {
 
     const sResults = Countries.filter((country) => country.name.toLowerCase().includes(keyword.toLowerCase()));
-    console.log('results', results)
+    // console.log('results', results)
 
     return (
       <div>

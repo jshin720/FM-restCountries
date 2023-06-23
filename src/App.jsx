@@ -15,16 +15,14 @@ function App() {
   const handleOnChange = (e) => {
     console.log("e", e.target.id);
 
-    if (e) setSearchType(e.target.id);
-    // console.log("searchType", searchType)
+    setSearchType(e.target.id);
+    console.log("searchType", searchType)
 
-    // if (e.target.name === "searchbar") {
-    //   setKeyWord(e.target.value);
-    // } else {
-    //   setFilter(e.target.value);
-    // }
-
-    // return ()
+    if (searchType === "search") {
+      setKeyWord(e.target.value);
+    } else {
+      setFilter(e.target.value);
+    }
   };
 
   return (

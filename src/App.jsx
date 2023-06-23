@@ -6,14 +6,41 @@ import Index from "./components/index/Index.jsx";
 import Search from "./components/search/Search";
 
 import countries from "./data.json";
-import{ Options } from "../src/assets/dropdown"
+
 
 function App() {
   const [keyword, setKeyWord] = useState('');
   const [filter, setFilter] = useState("");
   const [searchType, setSearchType] = useState(null);
 
-  console.log(Options)
+ const options = [
+   {
+     label: "Pick a Region",
+     value: "default",
+   },
+   {
+     label: "Africa",
+     value: "Africa",
+   },
+   {
+     label: "Americas",
+     value: "Americas",
+   },
+   {
+     label: "Asia",
+     value: "Asia",
+   },
+   {
+     label: "Europe",
+     value: "Europe",
+   },
+   {
+     label: "Oceania",
+     value: "Oceania",
+   },
+ ];
+
+ console.log("option", options)
 
   const handleOnChange = (e) => {
     console.log("e", e.target.id);
@@ -52,9 +79,9 @@ function App() {
       </select> */}
 
       <select name="filter" id="filter" onChange={handleOnChange}>
-        {Options.map((option, i) => {
-          <option value={option.value}>{option.label}</option>
-        })}
+        {options.map((option, i) => 
+          <option value={option.value} key={i}>{option.label}</option>
+        )}
       </select>
 
       <div>

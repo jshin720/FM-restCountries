@@ -1,11 +1,11 @@
-import { useState, useEffect } from 'react'
-import './App.css'
-import Header from './components/header/Header.jsx';
-import Main from './components/main/main.jsx';
-import Index from './components/index/Index.jsx'
-import Search from './components/search/Search';
+import { useState, useEffect } from "react";
+import "./App.css";
+import Header from "./components/header/Header.jsx";
+import Main from "./components/main/main.jsx";
+import Index from "./components/index/Index.jsx";
+import Search from "./components/search/Search";
 
-import Countries from "./data.json"
+import Countries from "./data.json";
 
 function App() {
   const [keyword, setKeyWord] = useState("");
@@ -13,48 +13,27 @@ function App() {
   const [searchType, setSearchType] = useState("");
 
   const handleOnChange = (e) => {
-    console.log("e",e)
-    if (!e) {
-      Countries.map((country) => {
-        return (
-          <div className="country-container">
-            <img src={country.flags.svg}></img>
-            <span>
-              <p>{country.name}</p>
-              <p>Population: {country.population}</p>
-              <p>Region: {country.region}</p>
-              <p>Capital: {country.capital}</p>
-            </span>
-          </div>
-        );
-      });
-    } 
+    console.log("e", e.target.id);
 
-    const {name, value} = e.target;
-    setSearchType(name)
-    console.log("event", name, value)
-    
+    if (e) setSearchType(e.target.id);
+    // console.log("searchType", searchType)
 
-    if (name === "searchbar") {
-      setKeyWord(value);
-    } else {
-      setFilter(value);
-    }
-    
-    return (<Search
-        keyword={keyword}
-        filter={filter}
-        searchType={searchType}
-    />)
+    // if (e.target.name === "searchbar") {
+    //   setKeyWord(e.target.value);
+    // } else {
+    //   setFilter(e.target.value);
+    // }
 
-  }
+    // return ()
+  };
 
   return (
     <>
       <h1>page loading</h1>
       <input
         type="text"
-        name="searchbar"
+        name="search"
+        id="search"
         placeholder="Search For A Country"
         value={keyword}
         onChange={handleOnChange}
@@ -68,10 +47,26 @@ function App() {
         <option value="Oceania">Oceania</option>
       </select>
       <div>
-         {handleOnChange()}
+        {!searchType ? (
+          Countries.map((country, i) => {
+            return (
+              <div className="country-container" key={i}>
+                <img alt="flag" title={country.name} src={country.flags.svg} />
+                <span>
+                  <p>{country.name}</p>
+                  <p>Population: {country.population}</p>
+                  <p>Region: {country.region}</p>
+                  <p>Capital: {country.capital}</p>
+                </span>
+              </div>
+            );
+          })
+        ) : (
+          <Search keyword={keyword} filter={filter} searchType={searchType} />
+        )}
       </div>
     </>
   );
 }
 
-export default App
+export default App;

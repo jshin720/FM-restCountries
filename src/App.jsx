@@ -20,8 +20,10 @@ function App() {
 
     if (searchType === "search") {
       setKeyWord(e.target.value);
+      setFilter("")
     } else {
       setFilter(e.target.value);
+      setKeyWord("")
     }
   };
 
@@ -38,8 +40,8 @@ function App() {
       />
       <label htmlFor="filter">Filter by Region</label>
       <select name="filter" id="filter" onChange={handleOnChange}>
-        <option value="Africa">Africa</option>
-        <option value="America">America</option>
+        <option defaultValue="Africa">Africa</option>
+        <option value="Americas">America</option>
         <option value="Asia">Asia</option>
         <option value="Europe">Europe</option>
         <option value="Oceania">Oceania</option>

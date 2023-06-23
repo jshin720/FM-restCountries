@@ -37,13 +37,31 @@ function Search({keyword, filter, searchType}) {
     const fResult = Countries.filter((country) => 
       country.region === filter
     )
-
-    console.log("f-result", fResult)
+     console.log("f-result", fResult)
+    return (
+      <div>
+        {
+          fResult.map(country => {
+            return (
+              <div className='country-container'>
+                <img src={country.flags.svg}></img>
+                <span>
+                  <p>{country.name}</p>
+                  <p>Population: {country.population}</p>
+                  <p>Region: {country.region}</p>
+                  <p>Capital: {country.capital}</p>
+                </span>
+              </div>
+            )
+          })
+        }
+      </div> 
+    )
   }
 
   return (
     <div>
-      {searchResults()}
+      { searchType === "search" ? searchResults() : filterResult()}
     </div>
   );
 }

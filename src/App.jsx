@@ -5,12 +5,15 @@ import Main from "./components/main/main.jsx";
 import Index from "./components/index/Index.jsx";
 import Search from "./components/search/Search";
 
-import Countries from "./data.json";
+import countries from "./data.json";
+import{ Options } from "../src/assets/dropdown"
 
 function App() {
   const [keyword, setKeyWord] = useState('');
-  const [filter, setFilter] = useState(null);
+  const [filter, setFilter] = useState("");
   const [searchType, setSearchType] = useState(null);
+
+  console.log(Options)
 
   const handleOnChange = (e) => {
     console.log("e", e.target.id);
@@ -39,17 +42,24 @@ function App() {
         onChange={handleOnChange}
       />
       <label htmlFor="filter">Filter by Region</label>
-      <select name="filter" id="filter" onChange={handleOnChange}>
+      {/* <select name="filter" id="filter" onChange={handleOnChange}>
         <option defaultValue="default">Pick a Region</option>
         <option value="Africa">Africa</option>
         <option value="Americas">America</option>
         <option value="Asia">Asia</option>
         <option value="Europe">Europe</option>
         <option value="Oceania">Oceania</option>
+      </select> */}
+
+      <select name="filter" id="filter" onChange={handleOnChange}>
+        {Options.map((option, i) => {
+          <option value={option.value}>{option.label}</option>
+        })}
       </select>
+
       <div>
         {!searchType ? (
-          Countries.map((country, i) => {
+          countries.map((country, i) => {
             return (
               <div className="country-container" key={i}>
                 <img alt="flag" title={country.name} src={country.flags.svg} />

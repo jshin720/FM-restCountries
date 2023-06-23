@@ -13,19 +13,18 @@ function Search({keyword, filter, searchType}) {
     return (
       <div>
         {
-          sResults.map(country => {
+          sResults.map((country, i) => {
             return (
-              <div className='country-container'>
+              <div className="country-container" key={i}>
                 <img src={country.flags.svg}></img>
                 <span>
-                <p>{country.name}</p>
-                <p>Population: {country.population}</p>
-                <p>Region: {country.region}</p>
-                <p>Capital: {country.capital}</p>
+                  <p>{country.name}</p>
+                  <p>Population: {country.population}</p>
+                  <p>Region: {country.region}</p>
+                  <p>Capital: {country.capital}</p>
                 </span>
               </div>
-
-            )
+            );
           })
         }
       </div> 
@@ -41,9 +40,9 @@ function Search({keyword, filter, searchType}) {
     return (
       <div>
         {
-          fResult.map(country => {
+          fResult.map((country, i) => {
             return (
-              <div className='country-container'>
+              <div className="country-container" key={i}>
                 <img src={country.flags.svg}></img>
                 <span>
                   <p>{country.name}</p>
@@ -52,7 +51,7 @@ function Search({keyword, filter, searchType}) {
                   <p>Capital: {country.capital}</p>
                 </span>
               </div>
-            )
+            );
           })
         }
       </div> 
@@ -61,7 +60,7 @@ function Search({keyword, filter, searchType}) {
 
   return (
     <div>
-      { searchType === "search" ? searchResults() : filterResult()}
+      { searchType === "search" || filter === "default" ? searchResults() : filterResult()}
     </div>
   );
 }

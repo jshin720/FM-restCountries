@@ -50,7 +50,7 @@ function App() {
 
     if (searchType === "search") {
       setKeyWord(e.target.value);
-      setFilter("")
+      setFilter("default")
     } else {
       setFilter(e.target.value);
       setKeyWord("")

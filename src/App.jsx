@@ -46,15 +46,16 @@ function App() {
     console.log("e", e.target.id);
 
     setSearchType(e.target.id);
-    console.log("searchType", searchType)
+    console.log("searchType-before", searchType, filter, keyword)
 
     if (searchType === "search") {
       setKeyWord(e.target.value);
-      setFilter("default")
+      setFilter("")
     } else {
       setFilter(e.target.value);
-      setKeyWord('')
+      setKeyWord("")
     }
+    console.log("searchType-after", searchType, filter, keyword);
   };
 
   return (
@@ -69,16 +70,8 @@ function App() {
         onChange={handleOnChange}
       />
       <label htmlFor="filter">Filter by Region</label>
-      {/* <select name="filter" id="filter" onChange={handleOnChange}>
-        <option defaultValue="default">Pick a Region</option>
-        <option value="Africa">Africa</option>
-        <option value="Americas">America</option>
-        <option value="Asia">Asia</option>
-        <option value="Europe">Europe</option>
-        <option value="Oceania">Oceania</option>
-      </select> */}
-
-      <select name="filter" id="filter" onChange={handleOnChange}>
+      
+      <select name="filter" id="filter" value={filter} onChange={handleOnChange}>
         {options.map((option, i) => 
           <option value={option.value} key={i}>{option.label}</option>
         )}

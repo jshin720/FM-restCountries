@@ -46,7 +46,7 @@ function App() {
     // console.log("e", e.target.id);
 
     setSearchType(e.target.id);
-    console.log("searchType-before", searchType, filter, keyword)
+    // console.log("searchType-before", searchType, filter, keyword)
 
     if (searchType === "search") {
       setKeyWord(e.target.value);

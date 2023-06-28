@@ -43,7 +43,7 @@ function App() {
  console.log("option", options)
 
   const handleOnChange = (e) => {
-    // console.log("e", e.target.id);
+    console.log("e", e.target.id);
 
     setSearchType(e.target.id);
     // console.log("searchType-before", searchType, filter, keyword)

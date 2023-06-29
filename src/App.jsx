@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, createContext } from "react";
 import "./App.css";
 import Header from "./components/header/Header.jsx";
 import Main from "./components/main/main.jsx";
@@ -7,6 +7,7 @@ import Search from "./components/search/Search";
 
 import countries from "./data.json";
 
+export const ThemeContext = createContext("light");
 
 function App() {
   const [keyword, setKeyWord] = useState('');
@@ -60,7 +61,7 @@ function App() {
   };
 
   return (
-    <>
+    <div className="App" id="light">
       <h1>page loading</h1>
       <input
         type="text"
@@ -83,7 +84,7 @@ function App() {
           <Search keyword={keyword} filter={filter} searchType={searchType} />
         
       </div>
-    </>
+    </div>
   );
 }
 

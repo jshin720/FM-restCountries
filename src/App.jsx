@@ -1,4 +1,4 @@
-import { useState, useEffect, createContext } from "react";
+import { useState, createContext } from "react";
 import "./App.css";
 import Header from "./components/header/Header.jsx";
 import Main from "./components/main/main.jsx";
@@ -7,84 +7,94 @@ import Search from "./components/search/Search";
 
 import countries from "./data.json";
 
-export const ThemeContext = createContext("light");
+export const ThemeContext = createContext(null);
 
 function App() {
-  const [keyword, setKeyWord] = useState('');
+  const [keyword, setKeyWord] = useState("");
   const [filter, setFilter] = useState("");
   const [searchType, setSearchType] = useState(null);
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState("light");
 
- const options = [
-   {
-     label: "Pick a Region",
-     value: "default",
-   },
-   {
-     label: "Africa",
-     value: "Africa",
-   },
-   {
-     label: "Americas",
-     value: "Americas",
-   },
-   {
-     label: "Asia",
-     value: "Asia",
-   },
-   {
-     label: "Europe",
-     value: "Europe",
-   },
-   {
-     label: "Oceania",
-     value: "Oceania",
-   },
- ];
+  const options = [
+    {
+      label: "Pick a Region",
+      value: "default",
+    },
+    {
+      label: "Africa",
+      value: "Africa",
+    },
+    {
+      label: "Americas",
+      value: "Americas",
+    },
+    {
+      label: "Asia",
+      value: "Asia",
+    },
+    {
+      label: "Europe",
+      value: "Europe",
+    },
+    {
+      label: "Oceania",
+      value: "Oceania",
+    },
+  ];
 
- console.log("option", options)
+  console.log("option", options);
+  console.log("themecontext", ThemeContext);
+  
+  const toggleTheme = () => {
+    setDarkMode((curr) => (curr === "light" ? "dark" : "light") )
+  }
 
   const handleOnChange = (e) => {
     console.log("e", e.target.id);
 
     setSearchType(e.target.id);
-    console.log("searchType-before", searchType, filter, keyword)
+    console.log("searchType-before", searchType, filter, keyword);
 
     if (searchType === "search") {
       setKeyWord(e.target.value);
-      setFilter("default")
+      setFilter("default");
     } else {
       setFilter(e.target.value);
-      setKeyWord("")
+      setKeyWord("");
     }
     console.log("searchType-after", searchType, filter, keyword);
   };
 
   return (
-    <div className="App" id="light">
-      <h1>page loading</h1>
-      <input
-        type="text"
-        name="search"
-        id="search"
-        placeholder="Search For A Country"
-        value={keyword}
-        onChange={handleOnChange}
-      />
-      <label htmlFor="filter">Filter by Region</label>
-      
-      <select name="filter" id="filter" value={filter} onChange={handleOnChange}>
-        {options.map((option, i) => 
-          <option value={option.value} key={i}>{option.label}</option>
-        )}
-      </select>
-
-      <div>
-       
+    <ThemeContext.Provider value={{darkMode, toggleTheme}}>
+      <div className="App" id="light">
+        <h1>page loading</h1>
+        <input
+          type="text"
+          name="search"
+          id="search"
+          placeholder="Search For A Country"
+          value={keyword}
+          onChange={handleOnChange}
+        />
+        <label htmlFor="filter">Filter by Region</label>
+        <select
+          name="filter"
+          id="filter"
+          value={filter}
+          onChange={handleOnChange}
+        >
+          {options.map((option, i) => (
+            <option value={option.value} key={i}>
+              {option.label}
+            </option>
+          ))}
+        </select>
+        <div>
           <Search keyword={keyword} filter={filter} searchType={searchType} />
-        
+        </div>
       </div>
-    </div>
+    </ThemeContext.Provider>
   );
 }
 

@@ -67,7 +67,7 @@ function App() {
 
   return (
     <ThemeContext.Provider value={{darkMode, toggleTheme}}>
-      <div className="App" id="light">
+      <div className="App" id={darkMode}>
         <h1>page loading</h1>
         <input
           type="text"

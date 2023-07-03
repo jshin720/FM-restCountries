@@ -70,7 +70,7 @@ function App() {
       <div className="App" id={darkMode}>
         <h1>page loading</h1>
         <div className="switch">
-        <ReactSwitch/>
+        <ReactSwitch onChange={handleOnChange}/>
 
         </div>
         <input

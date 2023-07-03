@@ -33,6 +33,14 @@
   }
 }
 
+#light .app {
+  background-color: #fff;
+}
+
+#dark .app {
+  background-color: darkslategrey;
+}
+
 .card {
   padding: 2em;
 }

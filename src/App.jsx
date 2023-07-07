@@ -53,7 +53,7 @@ function App() {
     // console.log("e", e.target.id);
 
     setSearchType(e.target.id);
-    // console.log("searchType-before", searchType, filter, keyword);
+    console.log("searchType-before", searchType, filter, keyword);
 
     if (searchType === "search") {
       setKeyWord(e.target.value);
@@ -62,7 +62,7 @@ function App() {
       setFilter(e.target.value);
       setKeyWord("");
     }
-    // console.log("searchType-after", searchType, filter, keyword);
+    console.log("searchType-after", searchType, filter, keyword);
   };
 
   return (

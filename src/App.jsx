@@ -42,8 +42,8 @@ function App() {
     },
   ];
 
-  console.log("option", options);
-  console.log("themecontext", ThemeContext);
+  // console.log("option", options);
+  // console.log("themecontext", ThemeContext);
   
   const toggleTheme = () => {
     setDarkMode((curr) => (curr === "light" ? "dark" : "light") )

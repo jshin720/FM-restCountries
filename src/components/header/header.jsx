@@ -3,6 +3,7 @@ import React from 'react';
 function header(props) {
   const {setDarkMode} = props;
 
+  console.log(props)
   const toggleTheme = () => {
     setDarkMode((curr) => (curr === "light" ? "dark" : "light"));
   };

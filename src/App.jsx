@@ -65,7 +65,7 @@ function App() {
   return (
     <ThemeContext.Provider value={{darkMode, toggleTheme}}>
       <div className="App" id={darkMode}>
-        <Header setDarkMode={setDarkMode}/>
+        <Header setDarkMode={setDarkMode} darkMode={darkMode}/>
         <h1>page loading</h1>
         <div className="switch">
         

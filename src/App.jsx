@@ -68,10 +68,10 @@ function App() {
   return (
     <ThemeContext.Provider value={{darkMode, toggleTheme}}>
       <div className="App" id={darkMode}>
-        {/* <Header/> */}
+        <Header toggleTheme={toggleTheme}/>
         <h1>page loading</h1>
         <div className="switch">
-        <ReactSwitch onChange={handleOnChange}/>
+        
 
         </div>
         <input

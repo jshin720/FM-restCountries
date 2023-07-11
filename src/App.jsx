@@ -45,10 +45,7 @@ function App() {
   // console.log("option", options);
   // console.log("themecontext", ThemeContext);
   
-  const toggleTheme = () => {
-    setDarkMode((curr) => (curr === "light" ? "dark" : "light") )
-  }
-
+  
   const handleOnChange = (e) => {
     console.log("e", e.target.id);
 
@@ -68,7 +65,7 @@ function App() {
   return (
     <ThemeContext.Provider value={{darkMode, toggleTheme}}>
       <div className="App" id={darkMode}>
-        <Header toggleTheme={toggleTheme}/>
+        <Header setDarkMode={setDarkMode}/>
         <h1>page loading</h1>
         <div className="switch">
         

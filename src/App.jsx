@@ -4,8 +4,6 @@ import Header from "./components/header/Header.jsx";
 import Main from "./components/main/main.jsx";
 import Index from "./components/index/Index.jsx";
 import Search from "./components/search/Search";
-import ReactSwitch from "react-switch";
-import countries from "./data.json";
 
 export const ThemeContext = createContext(null);
 

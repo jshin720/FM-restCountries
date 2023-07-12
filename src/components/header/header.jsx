@@ -3,7 +3,7 @@ import React from 'react';
 function header(props) {
   const {setDarkMode} = props;
 
-  console.log(props)
+  // console.log(props)
   const toggleTheme = () => {
     setDarkMode((curr) => (curr === "light" ? "dark" : "light"));
   };
@@ -13,7 +13,7 @@ function header(props) {
       <h4>Where in the world?</h4>
       <div>
         <span>moon img</span>
-        <button onClick={toggleTheme} >Dark Mode</button>
+        {/* <button onClick={toggleTheme} >Dark Mode</button> */}
       </div>
 
     </div>

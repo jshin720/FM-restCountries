@@ -1,8 +1,8 @@
 import { useState, createContext } from "react";
 import "./App.css";
 import Header from "./components/header/Header.jsx";
-import Main from "./components/main/main.jsx";
-import Index from "./components/index/Index.jsx";
+// import Main from "./components/main/main.jsx";
+// import Index from "./components/index/Index.jsx";
 import Search from "./components/search/Search";
 
 export const ThemeContext = createContext(null);
@@ -60,10 +60,14 @@ function App() {
     console.log("searchType-after", searchType, filter, keyword);
   };
 
+    const toggleTheme = () => {
+      setDarkMode((curr) => (curr === "light" ? "dark" : "light"));
+    };
+
   return (
     <ThemeContext.Provider value={{darkMode, toggleTheme}}>
       <div className="App" id={darkMode}>
-        <Header setDarkMode={setDarkMode} darkMode={darkMode}/>
+        <Header setDarkMode={setDarkMode} darkMode={darkMode} toggleTheme={toggleTheme}/>
         <h1>page loading</h1>
         <div className="switch">
         

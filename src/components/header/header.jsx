@@ -1,7 +1,7 @@
 import React from 'react';
 
 function header(props) {
-  // const {setDarkMode, darkMode, toggleTheme} = props;
+  const {setDarkMode, darkMode, toggleTheme} = props;
 
   console.log(props)
 

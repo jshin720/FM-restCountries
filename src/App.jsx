@@ -50,14 +50,14 @@ function App() {
     setSearchType(e.target.id);
     console.log("searchType-before", searchType, filter, keyword);
 
-    if (searchType === "search") {
-      setKeyWord(e.target.value);
-      setFilter("default");
-    } else {
-      setFilter(e.target.value);
-      setKeyWord("");
-    }
-    console.log("searchType-after", searchType, filter, keyword);
+    // if (searchType === "search") {
+    //   setKeyWord(e.target.value);
+    //   setFilter("default");
+    // } else {
+    //   setFilter(e.target.value);
+    //   setKeyWord("");
+    // }
+    // console.log("searchType-after", searchType, filter, keyword);
   };
 
     const toggleTheme = () => {

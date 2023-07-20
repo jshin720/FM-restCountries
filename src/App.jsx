@@ -40,8 +40,7 @@ function App() {
     },
   ];
 
-  // console.log("option", options);
-  // console.log("themecontext", ThemeContext);
+
   
   
   const handleOnChange = (e) => {

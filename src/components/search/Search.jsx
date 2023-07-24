@@ -1,4 +1,5 @@
 import React from 'react';
+import Country from "../country/country"
 import countries from "../../data.json"
 
 function Search({keyword, filter, searchType}) {

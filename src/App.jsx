@@ -41,9 +41,6 @@ function App() {
     },
   ];
 
-
-  
-  
   const handleOnChange = (e) => {
     console.log("e", e.target.id);
 
@@ -60,19 +57,20 @@ function App() {
     console.log("searchType-after", searchType, filter, keyword);
   };
 
-    const toggleTheme = () => {
-      setDarkMode((curr) => (curr === "light" ? "dark" : "light"));
-    };
+  const toggleTheme = () => {
+    setDarkMode((curr) => (curr === "light" ? "dark" : "light"));
+  };
 
   return (
-    <ThemeContext.Provider value={{darkMode, toggleTheme}}>
+    <ThemeContext.Provider value={{ darkMode, toggleTheme }}>
       <div className="App" id={darkMode}>
-        <Header setDarkMode={setDarkMode} darkMode={darkMode} toggleTheme={toggleTheme}/>
+        <Header
+          setDarkMode={setDarkMode}
+          darkMode={darkMode}
+          toggleTheme={toggleTheme}
+        />
         <h1>page loading</h1>
-        <div className="switch">
-        
-
-        </div>
+        <div className="switch"></div>
         <input
           type="text"
           name="search"

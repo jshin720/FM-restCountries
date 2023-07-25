@@ -9,7 +9,6 @@ function main() {
   return (
     <div>
       <button className='back-button'>back</button>
-      {/* <div>back button</div> */}
       <div>
         <div className="img-container">
           <h4>flag img</h4>

@@ -8,7 +8,7 @@ function main() {
 
   return (
     <div>
-      <button className='back-button'>back</button>
+      {/* <button className='back-button'>back</button> */}
       <div>
         <div className="img-container">
           <h4>flag img</h4>

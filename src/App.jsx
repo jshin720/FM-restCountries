@@ -62,13 +62,14 @@ function App() {
   };
 
   return (
+    <>
     <ThemeContext.Provider value={{ darkMode, toggleTheme }}>
       <div className="App" id={darkMode}>
         <Header
           setDarkMode={setDarkMode}
           darkMode={darkMode}
           toggleTheme={toggleTheme}
-        />
+          />
         <h1>page loading</h1>
         <div className="switch"></div>
         <input
@@ -78,14 +79,14 @@ function App() {
           placeholder="Search For A Country"
           value={keyword}
           onChange={handleOnChange}
-        />
+          />
         <label htmlFor="filter">Filter by Region</label>
         <select
           name="filter"
           id="filter"
           value={filter}
           onChange={handleOnChange}
-        >
+          >
           {options.map((option, i) => (
             <option value={option.value} key={i}>
               {option.label}
@@ -97,7 +98,16 @@ function App() {
         </div>
       </div>
     </ThemeContext.Provider>
+
+    <Routes>
+    <Route path="/" element={}/>
+    <Route path="/countries" element={}/>
+    <Route path="/countries/" element={}/>
+    </Routes>
+    </>
   );
+
+  
 }
 
 export default App;

@@ -9,7 +9,7 @@ function main() {
   return (
     <div>
       <button className='back-button'>back</button>
-      {/* <div>
+      <div>
         <div className="img-container">
           <h4>flag img</h4>
         </div>
@@ -29,7 +29,7 @@ function main() {
             <p></p>
           </div>
         </div>
-        <div>border countries</div> */}
+        <div>border countries</div>
       </div>
     </div>
   );

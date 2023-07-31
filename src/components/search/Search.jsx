@@ -7,8 +7,8 @@ function Search({keyword, filter, searchType}) {
   console.log("search component",keyword, filter, searchType)
 
   const searchResults = () => {
-    console.log('results', keyword)
-    console.log("f-result", filter)
+    // console.log('results', keyword)
+    // console.log("f-result", filter)
 
     const sResults = countries.filter((country) => country.name.toLowerCase().includes(keyword.toLowerCase()));
     const fResult = countries.filter((country) => 

@@ -56,9 +56,9 @@ function App() {
     console.log("searchType-after", searchType, filter, keyword);
   };
 
-  const toggleTheme = () => {
-    setDarkMode((curr) => (curr === "light" ? "dark" : "light"));
-  };
+  // const toggleTheme = () => {
+  //   setDarkMode((curr) => (curr === "light" ? "dark" : "light"));
+  // };
 
   return (
     <>

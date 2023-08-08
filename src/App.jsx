@@ -2,9 +2,8 @@ import { useState, createContext } from "react";
 import { Route, Routes, BrowserRouter } from "react-router-dom";
 import "./App.css";
 import Header from "./components/header/Header.jsx";
-import Country from "./components/country/Country"
+import Country from "./components/country/Country";
 import Search from "./components/search/Search";
-
 
 export const ThemeContext = createContext(null);
 
@@ -63,50 +62,48 @@ function App() {
 
   return (
     <>
-    <ThemeContext.Provider value={{ darkMode, toggleTheme }}>
-      <div className="App" id={darkMode}>
-        <Header
-          setDarkMode={setDarkMode}
-          darkMode={darkMode}
-          toggleTheme={toggleTheme}
+      <ThemeContext.Provider value={{ darkMode, toggleTheme }}>
+        <div className="App" id={darkMode}>
+          <Header
+            setDarkMode={setDarkMode}
+            darkMode={darkMode}
+            toggleTheme={toggleTheme}
           />
-        <h1>page loading</h1>
-        <div className="switch"></div>
-        <input
-          type="text"
-          name="search"
-          id="search"
-          placeholder="Search For A Country"
-          value={keyword}
-          onChange={handleOnChange}
+          <h1>page loading</h1>
+          <div className="switch"></div>
+          <input
+            type="text"
+            name="search"
+            id="search"
+            placeholder="Search For A Country"
+            value={keyword}
+            onChange={handleOnChange}
           />
-        <label htmlFor="filter">Filter by Region</label>
-        <select
-          name="filter"
-          id="filter"
-          value={filter}
-          onChange={handleOnChange}
+          <label htmlFor="filter">Filter by Region</label>
+          <select
+            name="filter"
+            id="filter"
+            value={filter}
+            onChange={handleOnChange}
           >
-          {options.map((option, i) => (
-            <option value={option.value} key={i}>
-              {option.label}
-            </option>
-          ))}
-        </select>
-        <div>
-          <Search keyword={keyword} filter={filter} searchType={searchType} />
+            {options.map((option, i) => (
+              <option value={option.value} key={i}>
+                {option.label}
+              </option>
+            ))}
+          </select>
+          <div>
+            <Search keyword={keyword} filter={filter} searchType={searchType} />
+          </div>
         </div>
-      </div>
-    </ThemeContext.Provider>
+      </ThemeContext.Provider>
 
-    <Routes>
-    <Route path="/countries" component={Search}/>
-    <Route path="/countries/:id" component={Country}/>
-    </Routes>
+      <Routes>
+        <Route path="/countries" component={Search} />
+        <Route path="/countries/:id" component={Country} />
+      </Routes>
     </>
   );
-
-  
 }
 
 export default App;

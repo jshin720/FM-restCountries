@@ -99,8 +99,8 @@ function App() {
       </ThemeContext.Provider>
 
       <Routes>
-        <Route path="/countries" component={Search} />
-        <Route path="/countries/:id" component={Country} />
+        {/* <Route path="/countries" component={Search} /> */}
+        {/* <Route path="/countries/:id" component={Country} /> */}
       </Routes>
     </>
   );

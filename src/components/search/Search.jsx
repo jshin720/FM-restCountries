@@ -45,10 +45,10 @@ function Search({keyword, filter, searchType}) {
                 <div className="country-container" key={i}>
                   <img src={country.flags.svg}></img>
                   <span>
-                    <p>{country.name}</p>
+                    {/* <p>{country.name}</p>
                     <p>Population: {country.population}</p>
                     <p>Region: {country.region}</p>
-                    <p>Capital: {country.capital}</p>
+                    <p>Capital: {country.capital}</p> */}
                   </span>
                 </div>
               );

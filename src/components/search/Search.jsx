@@ -15,7 +15,7 @@ function Search({keyword, filter, searchType}) {
       country.region === filter
     )
     
-    if (searchType === "search") {
+    if (searchType === "serch") {
       return (
         <div>
           {

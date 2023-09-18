@@ -39,7 +39,7 @@ function Search({keyword, filter, searchType}) {
     if (searchType === "filter") {
       return (
         <div>
-          {
+          {/* {
             fResult.map((country, i) => {
               return (
                 <div className="country-container" key={i}>
@@ -50,7 +50,7 @@ function Search({keyword, filter, searchType}) {
                     <p>Region: {country.region}</p>
                     <p>Capital: {country.capital}</p>
                   </span>
-                </div>
+                </div> */}
               );
             })
           }

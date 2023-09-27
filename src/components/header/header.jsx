@@ -7,14 +7,14 @@ function header(props) {
 
 
   return (
-    // <div>
-    //   <h4>Where in the world?</h4>
-    //   <div>
-    //     <span>moon img</span>
-    //     <button onClick={toggleTheme} >Dark Mode</button>
-    //   </div>
+    <div>
+      <h4>Where in the world?</h4>
+      <div>
+        <span>moon img</span>
+        <button onClick={toggleTheme} >Dark Mode</button>
+      </div>
 
-    // </div>
+    </div>
   );
 }
 

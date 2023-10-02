@@ -36,7 +36,7 @@ function Search({keyword, filter, searchType}) {
         </div> 
       );
     } 
-    if (searchType !== "filter") {
+    if (searchType === "filter") {
       return (
         <div>
           {

@@ -15,7 +15,7 @@ function Search({keyword, filter, searchType}) {
       country.region === filter
     )
     
-    if (searchType === "serch") {
+    if (searchType === "search") {
       return (
         <div>
           {
@@ -35,8 +35,8 @@ function Search({keyword, filter, searchType}) {
           }
         </div> 
       );
+      if (searchType === "filter") {
     } 
-    if (searchType === "filter") {
       return (
         <div>
           {

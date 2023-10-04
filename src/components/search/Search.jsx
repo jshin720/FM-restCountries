@@ -4,7 +4,7 @@ import countries from "../../data.json"
 
 function Search({keyword, filter, searchType}) {
 
-  console.log("search component",keyword, filter, searchType)
+  // console.log("search component",keyword, filter, searchType)
 
   const searchResults = () => {
     // console.log('results', keyword)

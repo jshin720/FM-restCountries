@@ -23,12 +23,21 @@ function Countries() {
   return (
     <div>
 
-    { countries.map((country) => {
-      console.log(country)
+    { countries.map((country, i) => {
+      const { flag } = country
+      console.log(flag)
 
-      return(
-        <article key={country.id}>Country</article>
-      )
+      return (
+        <article key={i}>
+          <div>
+            <img src={flag} alt={country.name.common} />
+            <h3>{country.name.common}</h3>
+            <h4>Population: {country.population}</h4>
+            <h4>Region: {country.region}</h4>
+            <h4>Capital: {country.capital}</h4>
+          </div>
+        </article>
+      );
     })
 
     }

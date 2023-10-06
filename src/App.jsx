@@ -2,7 +2,7 @@ import { useState, createContext } from "react";
 import { Route, Routes, BrowserRouter } from "react-router-dom";
 import "./App.css";
 import Header from "./components/header/Header.jsx";
-import Country from "./components/country/Country";
+import Countries from "./components/country/Country";
 import Search from "./components/search/Search";
 
 export const ThemeContext = createContext(null);

@@ -1,6 +1,6 @@
 import React from 'react';
 
-function main() {
+function Countries() {
 
 
 
@@ -35,4 +35,4 @@ function main() {
   );
 }
 
-export default main;
+export default Countries;

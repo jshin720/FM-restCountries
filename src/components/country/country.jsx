@@ -27,7 +27,7 @@ function Countries() {
       console.log(country)
 
       return(
-        
+        <article key={country.id}>Country</article>
       )
     })
 

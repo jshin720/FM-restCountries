@@ -17,57 +17,32 @@ function Countries() {
   }, []);
 
   return (
-    <div>
+    <section className="country-grid">
       {countries.map((country, i) => {
         const { flags, name } = country;
         // console.log(country)
 
         return (
-          <section className="country-grid">
-            <article key={i}>
-              <div>
-                <img src={flags.svg} alt={name.common} />
-                <h3>
-                  <span>{name.common}</span>
-                </h3>
-                <h4>
-                  Population: <span>{country.population}</span>
-                </h4>
-                <h4>
-                  Region: <span>{country.region}</span>
-                </h4>
-                <h4>
-                  Capital: <span>{country.capital}</span>
-                </h4>
-              </div>
-            </article>
-          </section>
+          <article key={i}>
+            <div>
+              <img src={flags.svg} alt={name.common} />
+              <h3>
+                <span>{name.common}</span>
+              </h3>
+              <h4>
+                Population: <span>{country.population}</span>
+              </h4>
+              <h4>
+                Region: <span>{country.region}</span>
+              </h4>
+              <h4>
+                Capital: <span>{country.capital}</span>
+              </h4>
+            </div>
+          </article>
         );
       })}
-      {/* <button className='back-button'>back</button>
-      <div>
-        <div className="img-container">
-          <h4>flag img</h4>
-        </div>
-        <div className="info-container">
-          <div>
-            <h4>country name</h4>
-            <p></p>
-            <p></p>
-            <p></p>
-            <p></p>
-            <p></p>
-          </div>
-
-          <div>
-            <p></p>
-            <p></p>
-            <p></p>
-          </div>
-        </div>
-        <div>border countries</div>
-      </div> */}
-    </div>
+    </section>
   );
 }
 

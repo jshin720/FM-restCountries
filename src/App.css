@@ -10,9 +10,15 @@ body {
   font-family: 'Nunito Sans', 'sans-serif'
 }
 
+.country-grid {
+
+}
+
 img {
   max-width: 100%;
 }
+
+
 
 #light .app {
   background-color: #fff;

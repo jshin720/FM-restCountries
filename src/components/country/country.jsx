@@ -23,23 +23,25 @@ function Countries() {
         // console.log(country)
 
         return (
-          <article key={i}>
-            <div>
-              <img src={flags.svg} alt={name.common} />
-              <h3>
-                <span>{name.common}</span>
-              </h3>
-              <h4>
-                Population: <span>{country.population}</span>
-              </h4>
-              <h4>
-                Region: <span>{country.region}</span>
-              </h4>
-              <h4>
-                Capital: <span>{country.capital}</span>
-              </h4>
-            </div>
-          </article>
+          <section className="country-grid">
+            <article key={i}>
+              <div>
+                <img src={flags.svg} alt={name.common} />
+                <h3>
+                  <span>{name.common}</span>
+                </h3>
+                <h4>
+                  Population: <span>{country.population}</span>
+                </h4>
+                <h4>
+                  Region: <span>{country.region}</span>
+                </h4>
+                <h4>
+                  Capital: <span>{country.capital}</span>
+                </h4>
+              </div>
+            </article>
+          </section>
         );
       })}
       {/* <button className='back-button'>back</button>

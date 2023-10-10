@@ -12,7 +12,7 @@ body {
 
 .country-grid {
   display: grid;
-  grid-template-columns: 1fr;
+  /* grid-template-columns: 1fr; */
   /* gap: 40px; */
 
 }

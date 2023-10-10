@@ -13,7 +13,7 @@ body {
 .country-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 40px;
+  /* gap: 40px; */
 
 }
 

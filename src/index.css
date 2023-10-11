@@ -11,9 +11,9 @@ body {
 }
 
 .country-grid {
-  /* display: grid; */
-  /* grid-template-columns: 1fr; */
-  /* gap: 40px; */
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
 
 }
 

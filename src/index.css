@@ -7,7 +7,8 @@
 }
 
 body {
-  font-family: 'Nunito Sans', 'sans-serif'
+  font-family: 'Nunito Sans', 'sans-serif';
+  padding: 20px;
 }
 
 .country-grid {

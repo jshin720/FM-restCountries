@@ -21,7 +21,7 @@ body {
   gap: 40px;
 }
 
-@media (min-width: ) {
+@media (min-width: 640px) {
   .country-grid {
     display: grid;
     grid-template-columns: 1fr;

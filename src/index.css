@@ -29,7 +29,7 @@ body {
   }
 }
 
-@media (min-width: ) {
+@media (min-width: 768px) {
   .country-grid {
     display: grid;
     grid-template-columns: 1fr;

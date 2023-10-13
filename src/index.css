@@ -13,6 +13,7 @@ img {
 body {
   font-family: "Nunito Sans", "sans-serif";
   padding: 20px;
+  background-color: antiquewhite;
 }
 
 .country-grid {

@@ -14,7 +14,7 @@ body {
   font-family: "Nunito Sans", "sans-serif";
   padding: 20px;
   background-color: antiquewhite;
-  color: #ffff;
+  /* color: #ffff; */
 }
 
 .country-grid {

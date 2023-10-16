@@ -36,7 +36,7 @@ function Countries() {
                 Region: <span>{country.region}</span>
               </h4>
               <h4>
-                Capital: <span>{country.capital}</span>
+                {/* Capital: <span>{country.capital}</span> */}
               </h4>
             </div>
           </article>

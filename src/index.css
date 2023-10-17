@@ -13,8 +13,8 @@ img {
 body {
   font-family: "Nunito Sans", "sans-serif";
   padding: 20px;
-  background-color: antiquewhite;
-  /* color: #ffff; */
+  background-color: hsl(209, 23%, 22%);
+  color: hsl(0, 0%, 100%);
 }
 
 .country-grid {

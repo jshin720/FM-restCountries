@@ -5,11 +5,19 @@ const url = "https://restcountries.com/v3.1/all";
 function Countries() {
   const [countries, setCountries] = useState([]);
 
+  const countriesSorted = countries.sort((a, b) => a.name.common > b.name.common)
+
+
   const fetchCountryData = async () => {
     const res = await fetch(url);
     const countries = await res.json();
     setCountries(countries);
     // console.log("count", countries);
+    const countriesSorted = countries.sort(
+      (a, b) => a.name.common < b.name.common
+    );
+
+    console.log("sorted", countriesSorted);
   };
 
   useEffect(() => {

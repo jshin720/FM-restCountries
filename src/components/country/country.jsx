@@ -11,19 +11,30 @@ function Countries() {
   const fetchCountryData = async () => {
     const res = await fetch(url);
     const countries = await res.json();
+    // ccountriesSorted = countries.sort(
+    //   (a, b) => a.name.common < b.name.common
+    // );
     setCountries(countries);
     // console.log("count", countries);
-    const countriesSorted = countries.sort(
-      (a, b) => a.name.common < b.name.common
-    );
 
-    console.log("sorted", countriesSorted);
+    // console.log("sorted", countriesSorted);
   };
 
   useEffect(() => {
     fetchCountryData();
   }, []);
-
+  countries.sort((a, b) => {
+    // console.log("a", a.name.official)
+    // console.log("b", b.name.official)
+    if (a.name.common < b.name.common) {
+      return -1
+    } 
+    if (a.name.common > b.name.common) {
+      return 1
+    }
+    return 0;
+  })
+  // console.log("aftersort", countries)
   return (
     <section className="country-grid">
       {countries.map((country, i) => {
@@ -44,7 +55,7 @@ function Countries() {
                 Region: <span>{country.region}</span>
               </h4>
               <h4>
-                {/* Capital: <span>{country.capital}</span> */}
+                Capital: <span>{country.capital}</span>
               </h4>
             </div>
           </article>

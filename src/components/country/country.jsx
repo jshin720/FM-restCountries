@@ -48,16 +48,19 @@ function Countries() {
               <img src={flags.svg} alt={name.common} />
               <div className="country-info">
                 <h3>
-                  <span>{name.common}</span>
+                  <span className="country-details">{name.common}</span>
                 </h3>
                 <h4>
-                  Population: <span>{country.population}</span>
+                  Population:{" "}
+                  <span className="country-details">{country.population}</span>
                 </h4>
                 <h4>
-                  Region: <span>{country.region}</span>
+                  Region:{" "}
+                  <span className="country-details">{country.region}</span>
                 </h4>
                 <h4>
-                  Capital: <span>{country.capital}</span>
+                  Capital:{" "}
+                  <span className="country-details">{country.capital}</span>
                 </h4>
               </div>
             </div>

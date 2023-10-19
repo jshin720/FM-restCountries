@@ -35,6 +35,20 @@ body {
   border-radius: 0 0 5px 5px;
 }
 
+
+.grid .country-info h3 {
+
+}
+
+.grid .country-info h4 {
+
+}
+
+.country-details {
+  
+}
+
+
 @media (min-width: 640px) {
   .country-grid {
     grid-template-columns: repeat(2, 1fr);

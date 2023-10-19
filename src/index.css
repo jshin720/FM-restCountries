@@ -26,8 +26,9 @@ body {
 .country-info {
   /* border: 2px solid green; */
   background-color:  hsl(209, 23%, 22%);
-  padding:20px;
+  padding:.5em;
   margin-top: -.2em;
+  border-radius: 0 0 5px 5px;
 }
 
 @media (min-width: 640px) {

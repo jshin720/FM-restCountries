@@ -20,13 +20,14 @@ body {
 .country-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 40px;
+  gap: 1.5em;
 }
 
 .country-info {
   /* border: 2px solid green; */
   background-color:  hsl(209, 23%, 22%);
-  padding: 20px;
+  padding:20px;
+  margin-top: -.2em;
 }
 
 @media (min-width: 640px) {

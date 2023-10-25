@@ -12,9 +12,9 @@ function Countries() {
   const fetchCountryData = async () => {
     const res = await fetch(url);
     const countries = await res.json();
-    // ccountriesSorted = countries.sort(
-    //   (a, b) => a.name.common < b.name.common
-    // );
+    ccountriesSorted = countries.sort(
+      (a, b) => a.name.common < b.name.common
+    );
     setCountries(countries);
     // console.log("count", countries);
 

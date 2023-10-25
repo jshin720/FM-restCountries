@@ -40,7 +40,7 @@ function Countries() {
     <section className="country-grid">
       {countries.map((country, i) => {
         const { flags, name } = country;
-        // console.log(country)
+        console.log(country)
 
         return (
           <article key={i}>

@@ -14,10 +14,7 @@ function Countries() {
     const countries = await res.json();
     
     setCountries(countries);
-    // console.log("count", countries);
-
-    // console.log("sorted", countriesSorted);
-  };
+  }
 
   useEffect(() => {
     fetchCountryData();

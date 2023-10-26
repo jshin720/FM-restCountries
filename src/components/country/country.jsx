@@ -23,8 +23,6 @@ function Countries() {
     fetchCountryData();
   }, []);
   countries.sort((a, b) => {
-    console.log("a", a.name.official)
-    console.log("b", b.name.official)
     if (a.name.common < b.name.common) {
       return -1;
     }

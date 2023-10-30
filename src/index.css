@@ -40,7 +40,13 @@ body {
   padding-bottom: .5em;
 }
 
-.c
+.country-grid h3 span {
+  font-weight: 800;
+}
+
+.country-grid h4 span {
+  
+}
 
 
 .country-info {

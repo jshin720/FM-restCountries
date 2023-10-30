@@ -32,6 +32,16 @@ body {
   border-radius: 5px 5px 0 0;
 }
 
+.country-grid h3 {
+  padding-bottom: 1em;
+}
+
+.country-grid h4 {
+  padding-bottom: .5em;
+}
+
+.c
+
 
 .country-info {
   border: 2px solid green;

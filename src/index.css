@@ -27,6 +27,8 @@ body {
 
 .country-grid img {
   border-radius: 5px 5px 0 0;
+  height: 5%;
+  width: 100%
 }
 
 .country-info {

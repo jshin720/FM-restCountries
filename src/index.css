@@ -32,38 +32,25 @@ body {
   border-radius: 5px 5px 0 0;
 }
 
-.country-grid h3 {
-  padding-bottom: 1em;
-}
-
-.country-grid h4 {
-  padding-bottom: .5em;
-}
-
-.country-grid h3 span {
-  font-weight: 800;
-}
-
-.country-grid h4 span {
-  
-}
-
-
 .country-info {
-  border: 2px solid green;
+  /* border: 2px solid green; */
   background-color:  hsl(209, 23%, 22%);
   padding:.5em;
-  margin-top: -.2em;
+  margin-top: -.35em;
   border-radius: 0 0 5px 5px;
 }
 
 
 .grid .country-info h3 {
-
+  padding-bottom: 1em;  
 }
 
 .grid .country-info h4 {
+  padding-bottom: .5em;
+}
 
+.country-details-header {
+  font-weight: 800;
 }
 
 .country-details {

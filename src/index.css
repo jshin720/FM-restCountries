@@ -36,7 +36,7 @@ body {
   background-color:  hsl(209, 23%, 22%);
   padding:.5em;
   margin-top: -.35em;
-  border-radius: 0 0 5px 5px;
+  /* border-radius: 0 0 5px 5px; */
 }
 
 

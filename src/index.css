@@ -21,7 +21,7 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1.5em;
-  box-shadow: 0 10px 10px rgb(32, 45, 54, .5);
+  /* box-shadow: 0 10px 10px rgb(32, 45, 54, .5); */
 }
 
 

@@ -11,7 +11,7 @@ function header(props) {
       <h4>Where in the world?</h4>
       <div>
         <span>moon img</span>
-        <button onClick={toggleTheme} >Dark Mode</button>
+        {/* <button onClick={toggleTheme} >Dark Mode</button> */}
       </div>
 
     </div>

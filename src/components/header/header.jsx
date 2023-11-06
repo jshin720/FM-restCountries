@@ -3,7 +3,7 @@ import React from 'react';
 function header(props) {
   // const {setDarkMode, darkMode, toggleTheme} = props;
 
-  console.log(props)
+  // console.log(props)
 
 
   return (

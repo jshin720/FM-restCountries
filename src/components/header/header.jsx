@@ -1,4 +1,5 @@
 import React from 'react';
+import "./header.css";
 
 function header(props) {
   // const {setDarkMode, darkMode, toggleTheme} = props;

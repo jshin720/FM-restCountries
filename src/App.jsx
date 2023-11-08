@@ -62,8 +62,8 @@ function App() {
 
   return (
     <>
-    <Header/>
-      <Countries/>
+      <Header />
+      <Countries />
       {/* <ThemeContext.Provider value={{ darkMode, toggleTheme }}>
         <div className="App" id={darkMode}>
           <Header

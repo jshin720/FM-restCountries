@@ -11,8 +11,13 @@ function header(props) {
       <header className='countries-header'>
         <div>
           <h1>
-            
+            where in the world?
           </h1>
+        </div>
+        <div>
+          <h4>
+            moon image button for dark mode
+          </h4>
         </div>
 
       </header>

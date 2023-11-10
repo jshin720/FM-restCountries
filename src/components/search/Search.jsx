@@ -86,7 +86,15 @@ function Search({keyword, filter, searchType}) {
         <input type="search" name="" id="" placeholder='Search For Country'/>
       </form>
       <div>
-        <select name="" id=""></select>
+        <select name="country-select" id="country-select" className='country-select'>
+          <option value="all">All</option>
+          <option value="africa">Africa</option>
+          <option value="america">America</option>
+          <option value="asia">Asia</option>
+          <option value="europe">Europe</option>
+          <option value="oceania">Oceania</option>
+          
+        </select>
       </div>
     </section>
   );

@@ -83,8 +83,11 @@ function Search({keyword, filter, searchType}) {
 
     <section className="search-filter">
       <form>
-        <input type="search" name="" id="" />
+        <input type="search" name="" id="" placeholder='Search For Country'/>
       </form>
+      <div>
+        <select name="" id=""></select>
+      </div>
     </section>
   );
 }

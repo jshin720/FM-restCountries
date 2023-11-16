@@ -16,49 +16,49 @@ function Search({keyword, filter, searchType}) {
     //   country.region === filter
     // )
     
-    if (searchType === "search") {
-      return (
-        <div>
-          {
-            sResults.map((country, i) => {
-              return (
-                <div className="country-container" key={i}>
-                  {/* <img src={country.flags.svg}></img> */}
-                  <span>
-                    <p>{country.name}</p>
-                    <p>Population: {country.population}</p>
-                    <p>Region: {country.region}</p>
-                    {/* <p>Capital: {country.capital}</p> */}
-                  </span>
-                </div>
-              );
-            })
-          }
-        </div> 
-      );
-      if (searchType === "filter") {
-    } 
-      return (
-        <div>
-          {
-            fResult.map((country, i) => {
-              return (
-                <div className="country-container" key={i}>
-                  <img src={country.flags.svg}></img>
-                  <span>
-                    <p>{country.name}</p>
-                    <p>Population: {country.population}</p>
-                    <p>Region: {country.region}</p>
-                    <p>Capital: {country.capital}</p>
-                  </span>
-                </div>
-              );
-            })
-          }
-        </div> 
-      )
-    }
-  }
+  //   if (searchType === "search") {
+  //     return (
+  //       <div>
+  //         {
+  //           sResults.map((country, i) => {
+  //             return (
+  //               <div className="country-container" key={i}>
+  //                 {/* <img src={country.flags.svg}></img> */}
+  //                 <span>
+  //                   <p>{country.name}</p>
+  //                   <p>Population: {country.population}</p>
+  //                   <p>Region: {country.region}</p>
+  //                   {/* <p>Capital: {country.capital}</p> */}
+  //                 </span>
+  //               </div>
+  //             );
+  //           })
+  //         }
+  //       </div> 
+  //     );
+  //     if (searchType === "filter") {
+  //   } 
+  //     return (
+  //       <div>
+  //         {
+  //           fResult.map((country, i) => {
+  //             return (
+  //               <div className="country-container" key={i}>
+  //                 <img src={country.flags.svg}></img>
+  //                 <span>
+  //                   <p>{country.name}</p>
+  //                   <p>Population: {country.population}</p>
+  //                   <p>Region: {country.region}</p>
+  //                   <p>Capital: {country.capital}</p>
+  //                 </span>
+  //               </div>
+  //             );
+  //           })
+  //         }
+  //       </div> 
+  //     )
+  //   }
+  // }
 
   
 

@@ -64,7 +64,7 @@ function App() {
     <>
       <Header />
       <Countries />
-      {/* <ThemeContext.Provider value={{ darkMode, toggleTheme }}>
+      {/* {/* <ThemeContext.Provider value={{ darkMode, toggleTheme }}>
         <div className="App" id={darkMode}>
           <Header
             setDarkMode={setDarkMode}
@@ -98,7 +98,7 @@ function App() {
             <Search keyword={keyword} filter={filter} searchType={searchType} />
           </div>
         </div>
-      </ThemeContext.Provider>
+      </ThemeContext.Provider> */}
 
       <Routes>
         <Route path="/countries" component={Search} />

@@ -93,7 +93,7 @@ function Search({keyword, filter, searchType}) {
           <option value="america">America</option>
           <option value="asia">Asia</option>
           <option value="europe">Europe</option>
-          <option value="oceania">Oceania</option>
+          {/* <option value="oceania">Oceania</option> */}
           
         </select>
       </div>

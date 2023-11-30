@@ -52,7 +52,7 @@ function Countries() {
                   <span className="country-details">{country.region}</span>
                 </h4>
                 <h4>
-                  Capital:{" "}
+                  {/* Capital:{" "} */}
                   <span className="country-details">{country.capital}</span>
                 </h4>
               </div>

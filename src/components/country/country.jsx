@@ -39,7 +39,7 @@ function Countries() {
           <article key={i}>
             <div>
               <img src={flags.svg} alt={name.common} />
-              {/* <div className="country-info"> */}
+              <div className="country-info">
                 <h3>
                   <span className="country-details-header">{name.common}</span>
                 </h3>
@@ -52,7 +52,7 @@ function Countries() {
                   <span className="country-details">{country.region}</span>
                 </h4>
                 <h4>
-                  {/* Capital:{" "} */}
+                  Capital:{" "}
                   <span className="country-details">{country.capital}</span>
                 </h4>
               </div>

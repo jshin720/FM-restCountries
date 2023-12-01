@@ -30,10 +30,10 @@ function Countries() {
   });
   console.log("aftersort", countries)
   return (
-    <section className="country-grid">
-      {countries.map((country, i) => {
-        const { flags, name } = country;
-        console.log(country)
+    // <section className="country-grid">
+    //   {countries.map((country, i) => {
+    //     const { flags, name } = country;
+    //     console.log(country)
 
         return (
           // <article key={i}>

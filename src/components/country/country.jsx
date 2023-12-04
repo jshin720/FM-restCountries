@@ -38,7 +38,7 @@ function Countries() {
         return (
           <article key={i}>
             <div>
-              <img src={flags.svg} alt={name.common} />
+              {/* <img src={flags.svg} alt={name.common} /> */}
               <div className="country-info">
                 <h3>
                   <span className="country-details-header">{name.common}</span>

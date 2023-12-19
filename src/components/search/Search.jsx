@@ -5,7 +5,7 @@ import "./search.css"
 
 function Search({keyword, filter, searchType}) {
 
-  // console.log("search component",keyword, filter, searchType)
+  console.log("search component",keyword, filter, searchType)
 
   const searchResults = () => {
     // console.log('results', keyword)

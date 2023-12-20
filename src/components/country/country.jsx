@@ -41,7 +41,7 @@ function Countries() {
               <img src={flags.svg} alt={name.common} />
               <div className="country-info">
                 <h3>
-                  <span className="country-details-header">{name.common}</span>
+                  {/* <span className="country-details-header">{name.common}</span> */}
                 </h3>
                 <h4>
                   Population:{" "}

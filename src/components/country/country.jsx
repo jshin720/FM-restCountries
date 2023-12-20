@@ -45,7 +45,7 @@ function Countries() {
                 </h3>
                 <h4>
                   Population:{" "}
-                  <span className="country-details">{country.population}</span>
+                  {/* <span className="country-details">{country.population}</span> */}
                 </h4>
                 <h4>
                   Region:{" "}

@@ -88,12 +88,12 @@ function Search({keyword, filter, searchType}) {
       </form>
       <div>
         <select name="country-select" id="country-select" className='country-select'>
-          {/* <option value="all">All</option>
+          <option value="all">All</option>
           <option value="africa">Africa</option>
           <option value="america">America</option>
           <option value="asia">Asia</option>
           <option value="europe">Europe</option> 
-          <option value="oceania">Oceania</option> */}
+          <option value="oceania">Oceania</option>
           
         </select>
       </div>

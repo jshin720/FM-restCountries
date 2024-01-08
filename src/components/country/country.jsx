@@ -28,7 +28,7 @@ function Countries() {
     }
     return 0;
   });
-  console.log("aftersort", countries)
+  // console.log("aftersort", countries)
   return (
     <section className="country-grid">
       {countries.map((country, i) => {

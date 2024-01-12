@@ -36,28 +36,28 @@ function Countries() {
         console.log(country)
 
         return (
-          // <article key={i}>
-          //   <div>
-          //     <img src={flags.svg} alt={name.common} />
-          //     <div className="country-info">
-          //       <h3>
-          //         <span className="country-details-header">{name.common}</span>
-          //       </h3>
-          //       <h4>
-          //         Population:{" "}
-          //         <span className="country-details">{country.population}</span>
-          //       </h4>
-          //       <h4>
-          //         Region:{" "}
-          //         <span className="country-details">{country.region}</span>
-          //       </h4>
-          //       <h4>
-          //         Capital:{" "}
-          //         <span className="country-details">{country.capital}</span>
-          //       </h4>
-          //     </div>
-          //   </div>
-          // </article>
+          <article key={i}>
+            <div>
+              <img src={flags.svg} alt={name.common} />
+              <div className="country-info">
+                <h3>
+                  <span className="country-details-header">{name.common}</span>
+                </h3>
+                <h4>
+                  Population:{" "}
+                  <span className="country-details">{country.population}</span>
+                </h4>
+                <h4>
+                  Region:{" "}
+                  <span className="country-details">{country.region}</span>
+                </h4>
+                <h4>
+                  Capital:{" "}
+                  <span className="country-details">{country.capital}</span>
+                </h4>
+              </div>
+            </div>
+          </article>
         );
       })}
     </section>

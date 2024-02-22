@@ -17,6 +17,13 @@ body {
   color: hsl(0, 0%, 100%);
 }
 
+/* head component */
+.countries-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: hsl(209, 23%, 22%);
+}
 
 /* search component */
 .search-filter {

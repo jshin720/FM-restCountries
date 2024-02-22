@@ -2,8 +2,8 @@ import { useState, createContext } from "react";
 import { Route, Routes, BrowserRouter } from "react-router-dom";
 import "./App.css";
 import Header from "./components/header/Header.jsx";
-import Countries from "./components/country/Country";
-import Search from "./components/search/Search";
+import Countries from "./components/countries/Countries.jsx";
+// import Search from "./components/search/Search";
 
 export const ThemeContext = createContext(null);
 
@@ -100,10 +100,10 @@ function App() {
         </div>
       </ThemeContext.Provider> */}
 
-      <Routes>
+      {/* <Routes>
         <Route path="/countries" component={Search} />
         <Route path="/countries/:id" component={Country} />
-      </Routes> */}
+      </Routes> */} */}
     </>
   );
 }

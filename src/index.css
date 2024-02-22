@@ -17,6 +17,14 @@ body {
   color: hsl(0, 0%, 100%);
 }
 
+
+/* search component */
+.search-filter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* countries component */
 
 .country-grid {

@@ -3,7 +3,7 @@ import { Route, Routes, BrowserRouter } from "react-router-dom";
 import "./App.css";
 import Header from "./components/header/Header.jsx";
 import Countries from "./components/countries/Countries.jsx";
-// import Search from "./components/search/Search";
+import Search from "./components/search/Search";
 
 export const ThemeContext = createContext(null);
 
@@ -63,6 +63,7 @@ function App() {
   return (
     <>
       <Header />
+      <Search/>
       <Countries />
       {/* {/* <ThemeContext.Provider value={{ darkMode, toggleTheme }}>
         <div className="App" id={darkMode}>

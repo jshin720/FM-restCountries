@@ -63,41 +63,11 @@ function Search({keyword, filter, searchType}) {
   
 
   return (
-    // <div>
-    //   {!searchType ? (
-    //       countries.map((country, i) => {
-    //         return (
-    //           <div className="country-container" key={i}>
-    //             <img alt="flag" title={country.name} src={country.flags.svg} />
-    //             <span>
-    //               <p>{country.name}</p>
-    //               <p>Population: {country.population}</p>
-    //               {/* <p>Region: {country.region}</p> */}
-    //               <p>Capital: {country.capital}</p>
-    //             </span>
-    //           </div>
-    //         );
-    //       })
-    //     ) :  searchResults()
-    //   }
-    // // </div>
-
-    // <section className="search-filter">
-    //   <form>
-    //     {/* <input type="search" name="" id="" placeholder='Search For Country'/> */}
-    //   </form>
-    //   <div>
-    //     <select name="country-select" id="country-select" className='country-select'>
-    //       <option value="all">All</option>
-    //       <option value="africa">Africa</option>
-    //       <option value="america">America</option>
-    //       <option value="asia">Asia</option>
-    //       <option value="europe">Europe</option> 
-    //       <option value="oceania">Oceania</option>
-          
-    //     </select>
-    //   </div>
-    // </section>
+    <section className="search-filter">
+      <form action="" className="form-control">
+        <input type="search" name="search" value={query} id="search" placeholder='Search for a Country' onChange={handleInput}/>
+      </form>
+    </section>
   );
 }
 

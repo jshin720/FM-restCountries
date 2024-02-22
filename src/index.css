@@ -42,6 +42,17 @@ body {
   box-shadow: 0 10px 10px rgb(32, 45, 54, .5);
 }
 
+.search-filter .form-control input {
+  background-color: #2b3743;
+  border: none;
+  outline: none;
+  padding: 8px;
+  border-radius: 5px;
+  color: #ffff;
+  font-family: inherit;
+  letter-spacing: 0.5px;
+  
+}
 
 .country-grid img {
   border-radius: 5px 5px 0 0;

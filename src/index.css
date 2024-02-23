@@ -54,6 +54,23 @@ body {
 .search-filter .form-control input::placeholder {
   color: #ffff;
 }
+
+.search-filter .region-select {
+  width: 100%;
+
+}
+
+.search-filter .region-select .country-select {
+  background-color: #2b3743;
+  color: #ffff;
+  font-family: inherit;
+  padding: 8px;
+  padding: 8px;
+  width: 200px;
+  border: none;
+  border-radius: 5px;
+
+}
 /* countries component */
 
 .country-grid {

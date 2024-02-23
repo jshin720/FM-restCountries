@@ -67,7 +67,7 @@ function Search({keyword, filter, searchType}) {
       <form action="" className="form-control">
         <input type="search" name="search" value={query} id="search" placeholder='Search for a Country' onChange={handleInput}/>
       </form>
-      <div>
+      <div className='region-select'>
         <select name="" id="" className="country-select">
           <option value="Filter by Region">Filter by Region</option>
           <option value="Africa">Africa</option>

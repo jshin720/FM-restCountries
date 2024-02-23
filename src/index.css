@@ -46,6 +46,10 @@ body {
   width: 100%;
 
 }
+
+.search-filter .form-control input::placeholder {
+  
+}
 /* countries component */
 
 .country-grid {

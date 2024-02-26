@@ -122,6 +122,15 @@ body {
 @media (min-width: 768px) {
   .country-grid {
     grid-template-columns: repeat(3, 1fr);
+
+  }
+
+  .search-filter .form-control {
+    width: auto;
+  }
+
+  .search-filter .form-control input {
+    width: auto;
   }
 }
 

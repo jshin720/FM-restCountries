@@ -1,5 +1,5 @@
 import { useState, createContext } from "react";
-import { Route, Routes, BrowserRouter } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import "./App.css";
 import Header from "./components/header/Header.jsx";
 import Countries from "./components/countries/Countries.jsx";

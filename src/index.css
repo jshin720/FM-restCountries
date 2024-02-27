@@ -142,8 +142,8 @@ body {
 }
 
 @media (min-width: 992px) {
-  body {
-    
+  .countries-header, .search-filter, .country-grid {
+    padding: 20px 100px;
   }
   .country-grid {
     grid-template-columns: repeat(4, 1fr);

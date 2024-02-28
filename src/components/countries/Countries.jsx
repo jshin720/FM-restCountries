@@ -29,6 +29,9 @@ function Countries() {
     }
     return 0;
   });
+  const removeCountry = () => {
+    
+  }
   // console.log("aftersort", countries)
   return (
     <section className="country-grid">
@@ -57,7 +60,7 @@ function Countries() {
                   <span className="country-details">{country.capital}</span>
                 </h4>
                 <Link to={`/countries/${name}`}>Learn More</Link>
-                <button className="country-btn" onClick={removeCountry(i)}></button>
+                <button className="country-btn" onClick={removeCountry(i)}>Revmore Country</button>
               </div>
             </div>
           </article>

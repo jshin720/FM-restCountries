@@ -56,7 +56,7 @@ function Countries() {
                   Capital:{" "}
                   <span className="country-details">{country.capital}</span>
                 </h4>
-                <Link to= ></Link>
+                <Link to={`/countries/${name}`}>Learn More</Link>
               </div>
             </div>
           </article>

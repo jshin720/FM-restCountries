@@ -13,9 +13,9 @@ function Countries() {
   const fetchCountryData = async () => {
     const res = await fetch(url);
     const countries = await res.json();
-    
+
     setCountries(countries);
-  }
+  };
 
   useEffect(() => {
     fetchCountryData();
@@ -33,8 +33,8 @@ function Countries() {
   return (
     <section className="country-grid">
       {countries.map((country, i) => {
-        const { flags, name } = country; 
-        console.log(country)
+        const { flags, name } = country;
+        console.log(country);
 
         return (
           <article key={i}>
@@ -57,6 +57,7 @@ function Countries() {
                   <span className="country-details">{country.capital}</span>
                 </h4>
                 <Link to={`/countries/${name}`}>Learn More</Link>
+                <button className="country-btn" onClick={removeCountry(i)}></button>
               </div>
             </div>
           </article>

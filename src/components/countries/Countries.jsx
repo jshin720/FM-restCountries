@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 // import countries from "../../data.json";
 const url = "https://restcountries.com/v3.1/all";
 
@@ -55,6 +56,7 @@ function Countries() {
                   Capital:{" "}
                   <span className="country-details">{country.capital}</span>
                 </h4>
+                <Link to= ></Link>
               </div>
             </div>
           </article>

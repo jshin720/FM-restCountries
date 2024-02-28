@@ -4,6 +4,7 @@ import "./App.css";
 import Header from "./components/header/Header.jsx";
 import Countries from "./components/countries/Countries.jsx";
 import Search from "./components/search/Search";
+import Country from "./components/country/Country.jsx";
 
 export const ThemeContext = createContext(null);
 
@@ -62,10 +63,13 @@ function App() {
 
   return (
     <Router>
-      <Header />
+      <Header /> 
+      {/* above the route so it becomes a universal component */}
       <Route exact path= "/">
         <Search />
         <Countries />
+      </Route>
+      <Route path="/countries/:name" children={<Country/>}>
       </Route>
     </Router>
     // <ThemeContext.Provider value={{ darkMode, toggleTheme }}>

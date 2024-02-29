@@ -16,6 +16,10 @@ img {
   justify-content: space-between;
 }
 
+.btn {
+ background-color: hsl(207, 26%, 17%); 
+}
+
 body {
   font-family: "Nunito Sans", "sans-serif";
   /* padding: 20px; */

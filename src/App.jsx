@@ -11,8 +11,8 @@ export const ThemeContext = createContext(null);
 function App() {
   const [keyword, setKeyWord] = useState("");
   const [filter, setFilter] = useState("");
-  const [searchType, setSearchType] = useState(null);
-  const [darkMode, setDarkMode] = useState("light");
+  // const [searchType, setSearchType] = useState(null);
+  // const [darkMode, setDarkMode] = useState("light");
 
   const options = [
     {

@@ -29,8 +29,9 @@ function Countries() {
     }
     return 0;
   });
-  const removeCountry = () => {
-    
+  const removeCountry = (id) => {
+    const newCountry = countries.filter((country) => country.id !== i)
+    setCountries(newCountry);
   }
   // console.log("aftersort", countries)
   return (

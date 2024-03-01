@@ -18,6 +18,12 @@ img {
 
 .btn {
  background-color: hsl(207, 26%, 17%); 
+ padding: 5px;
+ cursor: pointer;
+ text-decoration: none;
+ color: white;
+ border: 2px solid hsl(207, 26%, 17%);
+ border-radius: 4px;
 }
 
 body {

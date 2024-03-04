@@ -5,7 +5,11 @@ const Country = () => {
   const [country, setCountry] = useState([]);
 
 
-
+useEffect(() => {
+  const fetchCountry = async() => {
+    const res = await fetch()
+  }
+})
 
   return (
     <div>

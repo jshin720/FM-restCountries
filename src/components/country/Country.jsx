@@ -7,7 +7,11 @@ const Country = () => {
 
 useEffect(() => {
   const fetchCountry = async() => {
-    const res = await fetch()
+    const res = await fetch(`https://restcountries.com/v3.1/name/${name}`
+    );
+    const country = await res.json();
+    console.log(country)
+    setCountry([...country]); 
   }
 })
 

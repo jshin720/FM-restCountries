@@ -43,6 +43,19 @@ const Country = () => {
               <div className="flag">
                 <img src={flag} alt={`Flag of ${name}`} />
               </div>
+              <div className="country-detail">
+                <h2>{`${name} `}</h2>
+                <h5>Population: {population}</h5>
+                <p>Region: {region}</p>
+                <p>Sub Region: {subregion} </p>
+                <hr />  
+                <h3>Capital: {capital}</h3>
+                <p>Language: {languages[0].name} </p>
+                <p>Currency: {currencies[0].code}, Exchange Rate:
+                {`${currencies[0].exchangeRate} ${currencies[0].unit}`} </p>
+                <br/>
+                Top Level Domain: {`.${topLevelDomain[0]}`} 
+              </div>
             </article>
           )
         })}

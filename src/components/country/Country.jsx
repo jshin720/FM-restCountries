@@ -14,6 +14,7 @@ useEffect(() => {
     console.log(country)
     setCountry([...country]); 
   }
+  fetchCountry();
 }, [])
 
   return (

@@ -37,6 +37,14 @@ const Country = () => {
             languages,
             border,
           } = c;
+
+          return (
+            <article key={id}>
+              <div className="flag">
+                <img src={flag} alt={`Flag of ${name}`} />
+              </div>
+            </article>
+          )
         })}
       </section>
     </div>

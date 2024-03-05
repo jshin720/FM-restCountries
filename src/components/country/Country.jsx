@@ -52,7 +52,18 @@ const Country = () => {
                 <p>Language: {languages[0].name} </p>
                 <p>Currency: {currencies[0].code}, Exchange Rate:
                 {`${currencies[0].exchangeRate} ${currencies[0].unit}`} </p>
+
+                <h4>Border Countries: {border ? `${border.length} countries` : 'No Border'}</h4>  
+                
                 <br/>
+              </div>
+              <div>
+                <h5>
+                  Top Level Domain: <span>{topLevelDomain}</span>
+                </h5>
+                <h5>Native Name: {nativeName}</h5>
+                <h5>Currencies <span>{currencies}</span></h5>
+                <h5>Languages <span>{languages}</span></h5>
               </div>
             </article>
           )

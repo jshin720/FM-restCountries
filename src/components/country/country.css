@@ -1,3 +1,8 @@
 .country {
-    
+    padding: 50px;
+}
+
+.btn-light {
+    margin-bottom: 30px;
+    display: inline-block;
 }

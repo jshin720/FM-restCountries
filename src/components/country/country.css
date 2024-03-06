@@ -6,3 +6,7 @@
     margin-bottom: 30px;
     display: inline-block;
 }
+
+.country article .country-details div {
+    margin: 20px 0;
+}

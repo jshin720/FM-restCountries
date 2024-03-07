@@ -65,6 +65,16 @@ const Country = () => {
                 <h5>Currencies <span>{currencies}</span></h5>
                 <h5>Languages <span>{languages}</span></h5>
               </div>
+                <div>
+                <h3>Bordering Countries :</h3>
+                  {borders.map((border) => {
+                    return(
+                      <ul key={border}>
+                        <li>{border}</li>
+                      </ul>
+                    )
+                  })}
+                </div>
             </article>
           )
         })}

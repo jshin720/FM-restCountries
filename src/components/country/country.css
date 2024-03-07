@@ -30,6 +30,11 @@
 }
 
 .country article h3 {
+    font-weight: 670;
     margin: 0 20px;
     background-color: red;
+}
+
+.country article h3 {
+
 }

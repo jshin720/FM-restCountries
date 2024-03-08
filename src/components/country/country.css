@@ -35,6 +35,6 @@
     background-color: red;
 }
 
-.country article ul{
+.country article ul li {
     display: flex;
 }

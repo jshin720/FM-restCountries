@@ -35,7 +35,7 @@ const Country = () => {
             topLevelDomain,
             currencies,
             languages,
-            border,
+            borders,
           } = c;
 
           return (
@@ -50,33 +50,44 @@ const Country = () => {
                 <p>Sub Region: {subregion} </p>
                 <h3>Capital: {capital}</h3>
                 <p>Language: {languages[0].name} </p>
-                <p>Currency: {currencies[0].code}, Exchange Rate:
-                {`${currencies[0].exchangeRate} ${currencies[0].unit}`} </p>
+                <p>
+                  Currency: {currencies[0].code}, Exchange Rate:
+                  {`${currencies[0].exchangeRate} ${currencies[0].unit}`}{" "}
+                </p>
 
-                <h4>Border Countries: {border ? `${border.length} countries` : 'No Border'}</h4>  
-                
-                <br/>
+                <h4>
+                  Border Countries:{" "}
+                  {borders ? `${borders.length} countries` : "No Border"}
+                </h4>
+
+                <br />
               </div>
               <div>
                 <h5>
                   Top Level Domain: <span>{topLevelDomain}</span>
                 </h5>
                 <h5>Native Name: {nativeName}</h5>
-                <h5>Currencies <span>{currencies}</span></h5>
-                <h5>Languages <span>{languages}</span></h5>
+                <h5>
+                  Currencies <span>{currencies}</span>
+                </h5>
+                <h5>
+                  Languages <span>{languages}</span>
+                </h5>
               </div>
-                <div>
+              <div>
                 <h3>Bordering Countries :</h3>
+                <div className="borders">
                   {borders.map((border) => {
-                    return(
+                    return (
                       <ul key={border}>
                         <li>{border}</li>
                       </ul>
-                    )
+                    );
                   })}
                 </div>
+              </div>
             </article>
-          )
+          );
         })}
       </section>
     </div>

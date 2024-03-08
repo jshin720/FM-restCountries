@@ -37,6 +37,7 @@
 
 .country article .borders {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .country article .borders ul {

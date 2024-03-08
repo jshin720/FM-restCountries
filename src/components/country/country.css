@@ -35,6 +35,11 @@
     background-color: red;
 }
 
-.country article ul li {
+.country article .borders {
     display: flex;
+}
+
+.country article .borders ul {
+    margin: 0 10px;
+    background-color: green;
 }

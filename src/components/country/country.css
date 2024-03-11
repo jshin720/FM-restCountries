@@ -50,9 +50,8 @@
 
 @media (min-width: 992px) {
     .county article {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
 
     }
 }

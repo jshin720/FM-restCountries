@@ -49,7 +49,7 @@
 }
 
 @media (min-width: 992px) {
-    .county {
+    .county article {
         display: flex;
         align-items: center;
         justify-content: center;

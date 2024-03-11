@@ -62,7 +62,7 @@ const Country = () => {
 
                 <br />
               </div>
-              <div>
+              <div className="country-inner">
                 <h5>
                   Top Level Domain: <span>{topLevelDomain}</span>
                 </h5>

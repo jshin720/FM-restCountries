@@ -49,7 +49,10 @@
 }
 
 @media (min-width: 992px) {
-    .county article .country-inner {
+    .country {
+
+    }
+    .country article .country-inner {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }

@@ -3,13 +3,16 @@ import "./header.css";
 
 function header(props) {
   // const {setDarkMode, darkMode, toggleTheme} = props;
-  const moon = document.querySelector(".fa-moon");
+ 
   // console.log(props)
 
-  moon.addEventListener("click", () => {
-    document.body.classList.toggle('light')
-  })
-
+  
+  const changeTheme = () => {
+    const moon = document.querySelector(".fa-moon");
+    moon.addEventListener("click", () => {
+      document.body.classList.toggle("light");
+    });
+  }
   return (
     <>
       <header className='countries-header'>
@@ -20,7 +23,7 @@ function header(props) {
         </div>
         <div>
           <h4>
-            <i className='fas fa-moon'></i>
+            <i className='fas fa-moon' onClick={() => changeTheme()}></i>
           </h4>
         </div>
 

@@ -72,8 +72,14 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1366px) {
+  .county{
+    max-width: 1200px;
+  }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1440px) {
+  .country {
+    max-width: 1440px;
+  }
 }

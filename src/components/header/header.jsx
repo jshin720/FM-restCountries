@@ -3,9 +3,12 @@ import "./header.css";
 
 function header(props) {
   // const {setDarkMode, darkMode, toggleTheme} = props;
-
+  const moon = document.querySelector(".fa-moon");
   // console.log(props)
 
+  moon.addEventListener("click", () => {
+    document.body.classList.toggle('light')
+  })
 
   return (
     <>
@@ -17,7 +20,7 @@ function header(props) {
         </div>
         <div>
           <h4>
-            moon image button for dark mode
+            <i className='fas fa-moon'></i>
           </h4>
         </div>
 

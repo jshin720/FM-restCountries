@@ -52,7 +52,6 @@
   .country {
     max-width: 900px;
     margin: auto;
-
   }
   .country article .country-inner {
     display: grid;

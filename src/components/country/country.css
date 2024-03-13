@@ -49,6 +49,11 @@
 }
 
 @media (min-width: 992px) {
+  .country {
+    max-width: 900px;
+    margin: auto;
+    
+  }
   .country article .country-inner {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

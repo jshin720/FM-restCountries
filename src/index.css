@@ -53,7 +53,7 @@ body {
 }
 
 
-body.light-theme {
+body.light {
   background-color: var(--light-mode-bg);
   color: var(--light-mode-text);
 }

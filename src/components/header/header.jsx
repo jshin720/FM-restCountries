@@ -9,8 +9,10 @@ function header(props) {
   
   const changeTheme = () => {
     const moon = document.querySelector(".fa-moon");
+    const header = document.querySelector('.countries-header')
     moon.addEventListener("click", () => {
       document.body.classList.toggle("light");
+      header.classList.toggle("light")
     });
   }
   return (

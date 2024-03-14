@@ -97,6 +97,10 @@ body.light {
   color: #ffff;
 }
 
+.search-filter input.light, .search-filter select.light {
+  background-color: var(--light-mode-input);
+}
+
 .search-filter .region-select {
   width: 100%;
 

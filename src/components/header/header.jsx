@@ -20,6 +20,10 @@ function header(props) {
       header.classList.toggle("light");
       input.classList.toggle("light");
       select.classList.toggle("light")
+
+      details.forEach((detail) => {
+        details.classList.toggle("light")
+      })
     });
   }
   return (

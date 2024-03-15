@@ -4,6 +4,8 @@
 .country .country-all-details .light{
   background-color: var(--light-mode-bg;
 }
+
+
 .btn-light {
   margin-bottom: 30px;
   display: inline-block;

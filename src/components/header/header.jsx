@@ -12,6 +12,7 @@ function header(props) {
     const header = document.querySelector('.countries-header');
     const input = document.querySelector(".#search");
     const select = document.querySelector(".select");
+    const details = document.querySelector(`.details`);
     // console.log(header)
     // console.log(document)
     moon.addEventListener("click", () => {

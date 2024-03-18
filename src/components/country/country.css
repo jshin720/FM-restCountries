@@ -61,7 +61,9 @@
   border-radius: 3px;
   box-shadow: 0 5px 20px hsla(200, 15%, 8%, 0.5);
 }
-
+.country article .borders ul .light {
+  
+}
 @media (min-width: 992px) {
   .country {
     max-width: 900px;

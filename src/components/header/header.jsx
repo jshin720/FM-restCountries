@@ -13,8 +13,8 @@ function header(props) {
     const input = document.querySelector(".#search");
     const select = document.querySelector(".select");
     const details = document.querySelectorAll(`.details`);
-    // console.log(header)
-    // console.log(document)
+    console.log(header)
+    console.log(document)
     moon.addEventListener("click", () => {
       document.body.classList.toggle("light");
       header.classList.toggle("light");

@@ -14,6 +14,7 @@ function Search({keyword, filter, searchType}) {
     search.addEventListener("input", (e)=>{
       const { value } = e.target;
       
+      const countryName = document.querySelectorAll(".country-name");
     });
     const sResults = countries.filter((country) => country.name.toLowerCase().includes(keyword.toLowerCase()));
     const fResult = countries.filter((country) => 
@@ -29,7 +30,7 @@ function Search({keyword, filter, searchType}) {
                 <div className="country-container" key={i}>
                   <img src={country.flags.svg}></img>
                   <span>
-                    <p>{country.name}</p>
+                    <p className='country-name'>{country.name}</p>
                     <p>Population: {country.population}</p>
                     <p>Region: {country.region}</p>
                     <p>Capital: {country.capital}</p>

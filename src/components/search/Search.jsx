@@ -12,6 +12,7 @@ function Search({keyword, filter, searchType}) {
     // console.log("f-result", filter)
     const search = document.getElementById("search")
     search.addEventListener("input", (e)=>{
+      const { value } = e.target;
       if(e.target.value === ""){  
         return false;
       }

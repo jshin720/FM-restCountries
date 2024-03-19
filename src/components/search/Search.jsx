@@ -13,9 +13,7 @@ function Search({keyword, filter, searchType}) {
     const search = document.getElementById("search")
     search.addEventListener("input", (e)=>{
       const { value } = e.target;
-      if(e.target.value === ""){  
-        return false;
-      }
+      
     });
     const sResults = countries.filter((country) => country.name.toLowerCase().includes(keyword.toLowerCase()));
     const fResult = countries.filter((country) => 

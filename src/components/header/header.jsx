@@ -14,8 +14,10 @@ function header(props) {
     const select = document.querySelector(".select");
     const details = document.querySelectorAll(`.details`);
     const listItems = document.querySelectorAll('ul')
+
     console.log(header)
     console.log(document)
+
     moon.addEventListener("click", () => {
       document.body.classList.toggle("light");
       header.classList.toggle("light");
@@ -23,13 +25,15 @@ function header(props) {
       select.classList.toggle("light")
 
       details.forEach((detail) => {
-        details.classList.toggle("light")
+        detail.classList.toggle("light");
       })
 
       listItems.forEach((listItem) => {
-        listItem.classList.toggle('light')
-    });
-  }
+        listItem.classList.toggle('light');
+      });
+    })
+  };
+  
   return (
     <>
       <header className='countries-header'>

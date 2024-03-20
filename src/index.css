@@ -63,7 +63,7 @@ body.light {
   align-items: center;
   justify-content: space-between;
   padding: 10px 20px;
-  /* background-color: hsl(209, 23%, 22%); */
+  background-color: hsl(209, 23%, 22%);
 }
 
 /* search component */

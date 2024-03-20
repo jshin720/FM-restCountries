@@ -31,9 +31,9 @@ function Search({keyword, filter, searchType}) {
                   <img src={country.flags.svg}></img>
                   <span>
                     <p className='country-name'>{country.name}</p>
-                    <p>Population: {country.population}</p>
-                    <p>Region: {country.region}</p>
-                    <p>Capital: {country.capital}</p>
+                    <p className='country-population'>Population: {country.population}</p>
+                    <p className='country-region'>Region: {country.region}</p>
+                    <p className='country-capital'>Capital: {country.capital}</p>
                   </span>
                 </div>
               );

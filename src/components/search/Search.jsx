@@ -14,7 +14,7 @@ function Search({keyword, filter, searchType}) {
     search.addEventListener("input", (e)=>{
       const { value } = e.target;
       
-      const countryName = document.querySelectorAll(".country-name");
+      // const countryName = document.querySelectorAll(".country-name");
     });
     const sResults = countries.filter((country) => country.name.toLowerCase().includes(keyword.toLowerCase()));
     const fResult = countries.filter((country) => 

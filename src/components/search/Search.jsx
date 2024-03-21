@@ -15,6 +15,14 @@ function Search({keyword, filter, searchType}) {
       const { value } = e.target;
       
       const countryName = document.querySelectorAll(".country-name");
+
+      countryName.forEach((cName) => {
+        if(cName.innerText.toLowerCase().includes(value.toLowerCase())) {
+          cName.parentElement.style.display = "block";
+        } else {
+          cName.parentElement.style.display = "none";
+        }
+      })
     });
     const sResults = countries.filter((country) => country.name.toLowerCase().includes(keyword.toLowerCase()));
     const fResult = countries.filter((country) => 

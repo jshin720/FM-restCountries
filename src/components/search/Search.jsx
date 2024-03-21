@@ -6,24 +6,26 @@ import "./search.css"
 function Search({keyword, filter, searchType}) {
 
   console.log("search component",keyword, filter, searchType)
+window.addEventListener("DOMContentLoaded", ()=> {
+  const search = document.getElementById("search")
+  search.addEventListener("input", (e)=>{
+    const { value } = e.target;
+    
+    const countryName = document.querySelectorAll(".country-name");
+  
+    countryName.forEach((cName) => {
+      if(cName.innerText.toLowerCase().includes(value.toLowerCase())) {
+        cName.parentElement.style.display = "block";
+      } else {
+        cName.parentElement.style.display = "none";
+      }
+    })
+  });
 
+})
   const searchResults = () => {
     // console.log('results', keyword)
     // console.log("f-result", filter)
-    const search = document.getElementById("search")
-    search.addEventListener("input", (e)=>{
-      const { value } = e.target;
-      
-      const countryName = document.querySelectorAll(".country-name");
-
-      countryName.forEach((cName) => {
-        if(cName.innerText.toLowerCase().includes(value.toLowerCase())) {
-          cName.parentElement.style.display = "block";
-        } else {
-          cName.parentElement.style.display = "none";
-        }
-      })
-    });
     const sResults = countries.filter((country) => country.name.toLowerCase().includes(keyword.toLowerCase()));
     const fResult = countries.filter((country) => 
       country.region === filter

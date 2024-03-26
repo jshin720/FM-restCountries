@@ -26,7 +26,7 @@ function Search({ keyword, filter, searchType }) {
     // console.log('results', keyword)
     // console.log("f-result", filter)
     const sResults = countries.filter((country) =>
-      // country.name.toLowerCase().includes(keyword.toLowerCase())
+      country.name.toLowerCase().includes(keyword.toLowerCase())
     );
     const fResult = countries.filter((country) => country.region === filter);
 

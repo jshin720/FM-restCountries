@@ -47,7 +47,7 @@ img {
 }
 body {
   font-family: "Nunito Sans", "sans-serif";
-  /* padding: 20px; */
+  padding: 20px;
   background-color: hsl(207, 26%, 17%);
   color: hsl(0, 0%, 100%);
 }

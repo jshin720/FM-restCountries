@@ -2,9 +2,9 @@ import React from 'react';
 import "./header.css";
 
 function header(props) {
-  // const {setDarkMode, darkMode, toggleTheme} = props;
+  const {setDarkMode, darkMode, toggleTheme} = props;
  
-  // console.log(props)
+  console.log(props)
 
   
   const changeTheme = () => {
@@ -21,8 +21,8 @@ function header(props) {
     moon.addEventListener("click", () => {
       // document.body.classList.toggle("light");
       // header.classList.toggle("light");
-      // input.classList.toggle("light");
-      // select.classList.toggle("light")
+      input.classList.toggle("light");
+      select.classList.toggle("light")
 
       details.forEach((detail) => {
         detail.classList.toggle("light");

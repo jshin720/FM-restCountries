@@ -10,8 +10,8 @@ function header(props) {
   const changeTheme = () => {
     const moon = document.querySelector(".fa-moon");
     const header = document.querySelector('.countries-header');
-    // const input = document.querySelector(".#search");
-    // const select = document.querySelector(".select");
+    const input = document.querySelector(".#search");
+    const select = document.querySelector(".select");
     const details = document.querySelectorAll(`.details`);
     const listItems = document.querySelectorAll('ul')
 

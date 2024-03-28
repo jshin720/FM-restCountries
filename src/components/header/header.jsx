@@ -20,7 +20,7 @@ function header(props) {
 
     moon.addEventListener("click", () => {
       // document.body.classList.toggle("light");
-      // header.classList.toggle("light");
+      header.classList.toggle("light");
       input.classList.toggle("light");
       select.classList.toggle("light")
 

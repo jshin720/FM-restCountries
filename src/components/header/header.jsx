@@ -29,7 +29,7 @@ function header(props) {
       })
 
       listItems.forEach((listItem) => {
-        // listItem.classList.toggle('light');
+        listItem.classList.toggle('light');
       });
     })
   };

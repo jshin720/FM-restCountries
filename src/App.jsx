@@ -54,7 +54,7 @@ function App() {
       setFilter(e.target.value);
       setKeyWord("");
     }
-    console.log("searchType-after", searchType, filter, keyword);
+    // console.log("searchType-after", searchType, filter, keyword);
   };
 
   const toggleTheme = () => {

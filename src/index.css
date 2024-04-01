@@ -55,7 +55,7 @@ body {
 
 body.light {
   background-color: var(--light-mode-bg);
-  /* color: var(--light-mode-text); */
+  color: var(--light-mode-text);
 }
 /* header component */
 .countries-header {

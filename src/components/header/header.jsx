@@ -14,6 +14,7 @@ function header(props) {
     const select = document.querySelector(".select");
     const details = document.querySelectorAll(`.details`);
     const listItems = document.querySelectorAll('ul')
+    const listCountries =
 
     // console.log(header)
     // console.log(document)

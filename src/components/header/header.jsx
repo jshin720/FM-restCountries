@@ -26,6 +26,7 @@ function header(props) {
       select.classList.toggle("light")
 
       details.forEach((detail) => {
+        console.log(detail)
         detail.classList.toggle("light");
       })
 

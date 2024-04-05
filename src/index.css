@@ -84,7 +84,7 @@ body.light {
   background-color: #2b3743;
   border: none;
   outline: none;
-  /* padding: 12px; */
+  padding: 12px;
   border-radius: 5px;
   color: #ffff;
   font-family: inherit;

@@ -32,7 +32,7 @@ function header(props) {
 
       listItems.forEach((listItem) => {
         console.log(listItem)
-        // listItem.classList.toggle('light');
+        listItem.classList.toggle('light');
       });
     })
   };

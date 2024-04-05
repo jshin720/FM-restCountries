@@ -26,12 +26,12 @@ function header(props) {
       select.classList.toggle("light")
 
       details.forEach((detail) => {
-        console.log(detail)
+        // console.log(detail)
         detail.classList.toggle("light");
       })
 
       listItems.forEach((listItem) => {
-        console.log(listItem)
+        // console.log(listItem)
         listItem.classList.toggle('light');
       });
     })

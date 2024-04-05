@@ -135,7 +135,7 @@ body.light {
 }
 
 .country-info {
-  /* border: 2px solid green; */
+  border: 2px solid green;
   background-color:  hsl(209, 23%, 22%);
   padding: .5em;
   margin-top: -.35em;

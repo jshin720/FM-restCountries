@@ -4,7 +4,7 @@ import countries from "../../data.json";
 import "./search.css";
 
 function Search({ keyword, filter, searchType }) {
-  // console.log("search component", keyword, filter, searchType);
+  console.log("search component", keyword, filter, searchType);
   window.addEventListener("DOMContentLoaded", () => {
     const search = document.getElementById("search");
     search.addEventListener("input", (e) => {

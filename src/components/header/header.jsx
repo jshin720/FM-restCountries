@@ -16,8 +16,8 @@ function header(props) {
     const listItems = document.querySelectorAll('ul')
     const listCountries = document.querySelectorAll("country-items")
 
-    console.log(header)
-    console.log(document)
+    // console.log(header)
+    // console.log(document)
 
     moon.addEventListener("click", () => {
       document.body.classList.toggle("light");

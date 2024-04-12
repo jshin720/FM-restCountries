@@ -14,10 +14,10 @@ function header(props) {
     // const select = document.querySelector(".select");
     const details = document.querySelectorAll(`.details`);
     const listItems = document.querySelectorAll('ul')
-    // const listCountries = document.querySelectorAll("country-items")
+    const listCountries = document.querySelectorAll("country-items")
 
-    // console.log(header)
-    // console.log(document)
+    console.log(header)
+    console.log(document)
 
     moon.addEventListener("click", () => {
       document.body.classList.toggle("light");
@@ -26,7 +26,7 @@ function header(props) {
       select.classList.toggle("light")
 
       details.forEach((detail) => {
-        // console.log(detail)
+        console.log(detail)
         detail.classList.toggle("light");
       })
 

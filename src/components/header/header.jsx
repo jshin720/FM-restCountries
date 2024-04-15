@@ -23,7 +23,7 @@ function header(props) {
       document.body.classList.toggle("light");
       // header.classList.toggle("light");
       input.classList.toggle("light");
-      select.classList.toggle("light")
+      // select.classList.toggle("light")
 
       details.forEach((detail) => {
         console.log(detail)

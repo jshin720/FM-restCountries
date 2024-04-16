@@ -12,7 +12,7 @@ function header(props) {
     const header = document.querySelector('.countries-header');
     const input = document.querySelector(".#search");
     const select = document.querySelector(".select");
-    const details = document.querySelectorAll(`.details`);
+    const details = document.querySelectorAll('.details');
     const listItems = document.querySelectorAll('ul')
     const listCountries = document.querySelectorAll("country-items")
 

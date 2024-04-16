@@ -50,7 +50,15 @@ function header(props) {
             <i className='fas fa-moon' onClick={() => changeTheme()}></i>
           </h4>
         </div>
-
+        <div>
+          <SearchBar />
+        </div>
+      </header>
+      
+      <CountryList countries={countries}/>
+    </>
+  );  
+        </div>
       </header>
     </>
   );

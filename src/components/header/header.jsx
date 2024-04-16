@@ -51,13 +51,7 @@ function header(props) {
           </h4>
         </div>
         <div>
-          <SearchBar />
-        </div>
-      </header>
-      
-      <CountryList countries={countries}/>
-    </>
-  );  
+          
         </div>
       </header>
     </>

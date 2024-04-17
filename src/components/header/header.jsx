@@ -31,7 +31,7 @@ function header(props) {
       })
 
       listItems.forEach((listItem) => {
-        console.log(listItem)
+        // console.log(listItem)
         listItem.classList.toggle('light');
       });
     })

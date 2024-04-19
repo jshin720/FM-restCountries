@@ -6,7 +6,7 @@ import "./search.css";
 function Search({ keyword, filter, searchType }) {
   console.log("search component", keyword, filter, searchType);
   window.addEventListener("DOMContentLoaded", () => {
-    // const search = document.getElementById("search");
+    const search = document.getElementById("search");
     search.addEventListener("input", (e) => {
       const { value } = e.target;
       // console.log(search)

@@ -37,7 +37,7 @@ function Search({ keyword, filter, searchType }) {
           {sResults.map((country, i) => {
             return (
               <div className="country-container" key={i}>
-                <img src={country.flags.svg}></img>
+                {/* <img src={country.flags.svg}></img> */}
                 <span>
                   <p className="country-name">{country.name}</p>
                   <p className="country-population">

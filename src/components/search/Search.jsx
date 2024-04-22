@@ -29,7 +29,7 @@ function Search({ keyword, filter, searchType }) {
     const sResults = countries.filter((country) =>
       // country.name.toLowerCase().includes(keyword.toLowerCase())
     );
-    const fResult = countries.filter((country) => country.region === filter);
+    // const fResult = countries.filter((country) => country.region === filter);
 
     if (searchType === "search") {
       return (

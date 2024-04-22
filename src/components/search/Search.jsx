@@ -11,14 +11,14 @@ function Search({ keyword, filter, searchType }) {
       const { value } = e.target;
       console.log(search)
       // console.log(value)
-      const countryName = document.querySelectorAll(".country-name");
+      // const countryName = document.querySelectorAll(".country-name");
 
       countryName.forEach((cName) => {
         console.log(cName)
-        if (cName.innerText.toLowerCase().includes(value.toLowerCase())) {
+        // if (cName.innerText.toLowerCase().includes(value.toLowerCase())) {
           cName.parentElement.style.display = "block";
         } else {
-          cName.parentElement.style.display = "none";
+          // cName.parentElement.style.display = "none";
         }
       });
     });

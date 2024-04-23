@@ -18,7 +18,7 @@ function Search({ keyword, filter, searchType }) {
         // if (cName.innerText.toLowerCase().includes(value.toLowerCase())) {
           // cName.parentElement.style.display = "block";
         } else {
-          // cName.parentElement.style.display = "none";
+          cName.parentElement.style.display = "none";
         }
       });
     });
@@ -27,9 +27,9 @@ function Search({ keyword, filter, searchType }) {
     console.log('results', keyword)
     console.log("f-result", filter)
     const sResults = countries.filter((country) =>
-      // country.name.toLowerCase().includes(keyword.toLowerCase())
+      country.name.toLowerCase().includes(keyword.toLowerCase())
     );
-    // const fResult = countries.filter((country) => country.region === filter);
+    const fResult = countries.filter((country) => country.region === filter);
 
     if (searchType === "search") {
       return (

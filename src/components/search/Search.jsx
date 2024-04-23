@@ -10,8 +10,8 @@ function Search({ keyword, filter, searchType }) {
     search.addEventListener("input", (e) => {
       const { value } = e.target;
       console.log(search)
-      // console.log(value)
-      // const countryName = document.querySelectorAll(".country-name");
+      console.log(value)
+      const countryName = document.querySelectorAll(".country-name");
 
       countryName.forEach((cName) => {
         console.log(cName)

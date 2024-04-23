@@ -15,8 +15,8 @@ function Search({ keyword, filter, searchType }) {
 
       countryName.forEach((cName) => {
         console.log(cName)
-        // if (cName.innerText.toLowerCase().includes(value.toLowerCase())) {
-          // cName.parentElement.style.display = "block";
+        if (cName.innerText.toLowerCase().includes(value.toLowerCase())) {
+          cName.parentElement.style.display = "block";
         } else {
           cName.parentElement.style.display = "none";
         }
@@ -37,7 +37,7 @@ function Search({ keyword, filter, searchType }) {
           {sResults.map((country, i) => {
             return (
               <div className="country-container" key={i}>
-                {/* <img src={country.flags.svg}></img> */}
+                <img src={country.flags.svg}></img>
                 <span>
                   <p className="country-name">{country.name}</p>
                   <p className="country-population">

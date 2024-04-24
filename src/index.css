@@ -81,7 +81,7 @@ body.light {
 }
 
 .search-filter .form-control input {
-  background-color: #2b3743;
+  /* background-color: #2b3743; */
   border: none;
   outline: none;
   padding: 12px;

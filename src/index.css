@@ -112,7 +112,7 @@ body.light {
   font-family: inherit;
   padding: 12px;
   width: 200px;
-  border: none;
+  /* border: none; */
   border-radius: 5px;
 
 }

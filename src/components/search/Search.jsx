@@ -16,7 +16,13 @@ function Search({ keyword, filter, searchType }) {
       countryName.forEach((cName) => {
         console.log(cName)
         if (cName.innerText.toLowerCase().includes(value.toLowerCase())) {
-          cName.parentElement.style.display = "block";
+          // cName.parentElement.style.display = "block";
+          console.log(true)
+          cName.classList.remove("hide")
+        } else {
+          // cName.parentElement.style.display = "none";
+          cName.classList.add("hide")
+        }
         } else {
           // cName.parentElement.style.display = "none";
         }

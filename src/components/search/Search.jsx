@@ -9,7 +9,7 @@ function Search({ keyword, filter, searchType }) {
     const search = document.getElementById("search");
     search.addEventListener("input", (e) => {
       const { value } = e.target;
-      console.log(search)
+      // console.log(search)
       console.log(value)
       const countryName = document.querySelectorAll(".country-name");
 

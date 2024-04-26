@@ -24,7 +24,7 @@ function Search({ keyword, filter, searchType }) {
           cName.classList.add("hide")
         }
         } else {
-          // cName.parentElement.style.display = "none";
+          cName.parentElement.style.display = "none";
         }
       });
     });

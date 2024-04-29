@@ -20,7 +20,7 @@ function Search({ keyword, filter, searchType }) {
           console.log(true)
           cName.classList.remove("hide")
         } else {
-          // cName.parentElement.style.display = "none";
+          cName.parentElement.style.display = "none";
           cName.classList.add("hide")
         }
         } else {

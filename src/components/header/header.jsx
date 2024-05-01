@@ -48,6 +48,13 @@ function header(props) {
         <div>
           <h4>
             <i className='fas fa-moon' onClick={() => changeTheme()}></i>
+            </h4>
+        </div>
+      </header>
+      
+      <section className="search">
+        <input type="text" placeholder="Search countries..." onChange={handleInput} />
+      </section>
           </h4>
         </div>
         <div>

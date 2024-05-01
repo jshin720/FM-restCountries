@@ -55,7 +55,8 @@ function header(props) {
       <section className="search">
         <input type="text" placeholder="Search countries..." onChange={handleInput} />
       </section>
-          </h4>
+          </h4> 
+          <select name="category" id="categories" onChange={handleSelect}>   </select>
         </div>
         <div>
           

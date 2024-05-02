@@ -12,7 +12,7 @@ function Search({ keyword, filter, searchType }) {
       const countryName = document.querySelectorAll(".country-name");
 
       countryName.forEach((cName) => {
-        console.log(cName)
+        
         if (cName.innerText.toLowerCase().includes(value.toLowerCase())) {
           cName.parentElement.style.display = "block";
         } else {

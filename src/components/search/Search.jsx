@@ -61,6 +61,13 @@ function Search({ keyword, filter, searchType }) {
 
                 <span>
                   <p>{country.name}</p>
+                  </span>
+                  )
+          })
+          }
+        
+    } else {
+      return null;
                   <p>Population: {country.population}</p>
                   <p>Region: {country.region}</p>
                   <p>Capital: {country.capital}</p>

@@ -55,6 +55,7 @@ function Search({ keyword, filter, searchType }) {
             return (
               <div className="country-container" key={i}>
                 <img src={country.flags.svg}></img>
+                <button onClick={() => addCountryToSearch(country)}>Add to Search</button>
                 <span>
                   <p>{country.name}</p>
                   <p>Population: {country.population}</p>

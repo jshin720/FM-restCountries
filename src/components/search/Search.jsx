@@ -63,6 +63,13 @@ function Search({ keyword, filter, searchType }) {
                   </span>
               <button onClick={()=>addCountry  
               (country.name, country.region, country.population, country.capital, country.latlng[0], country.latlng[1])}>Add to (country)}>Add to Search</button> (country)}>Add to Search</button> (country)}>Add to search</button> (country)}>Add to Search</button> 
+                  (country.name, 
+                  country.population,  
+                  country.region,  
+                  country.capital,  
+                  country.languages,  
+                  country.currencies,  
+                  country.gini, 
                 </span>
               </div>
             );

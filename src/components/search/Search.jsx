@@ -61,20 +61,6 @@ function Search({ keyword, filter, searchType }) {
                   <p>Region: {country.region}</p>
                   <p>Capital: {country.capital}</p>
                   </span>
-              <button onClick={()=>addCountry  
-              (country.name, country.region, country.population, country.capital, country.latlng[0], country.latlng[1])}>Add to (country)}>Add to Search</button> (country)}>Add to Search</button> (country)}>Add to search</button> (country)}>Add to Search</button> 
-              (country.name, country.region, country.population,  
-               country.capital, country.languages, country.flags.png,  
-               country.areaKm2, country.gdpUSD)}>Add to Search</button>
-              </div>
-                  (country.name, 
-                  country.population,  
-                  country.region,  
-                  country.capital,  
-                  country.languages,  
-                  country.currencies,  
-                  country.gini, 
-                </span>
               </div>
             );
           })}

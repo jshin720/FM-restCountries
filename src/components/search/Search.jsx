@@ -34,6 +34,7 @@ function Search({ keyword, filter, searchType }) {
             return (
               <div className="country-container" key={i}>
                 <img src={country.flags.svg}></img>
+                <Country country={country} />
                 <span>
                   <p className="country-name">{country.name}</p>
                   <p className="country-population">

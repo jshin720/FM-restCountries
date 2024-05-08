@@ -32,20 +32,13 @@ function Search({ keyword, filter, searchType }) {
         <div>
           {sResults.map((country, i) => {
             return (
-              < className="country-container" key={i}>
+              <div className="country-container" key={i}>
                 <img src={country.flags.svg}></img>
                 <Country country={country} /> 
                 <span>
-
-
                   <p className="country-name">{country.name}</p>
                   <p className="country-population">
-                    Population: {country.population}  
-                    </p>
-                    </span>
-              </div>
-              )
-                
+                    Population: {country.population}
                   </p>
                   <p className="country-region">Region: {country.region}</p>
                   <p className="country-capital">Capital: {country.capital}</p>

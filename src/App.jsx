@@ -73,15 +73,15 @@ function App() {
       </Route>
     </Router>
     <ThemeContext.Provider value={{ darkMode, toggleTheme }}>
-    //   <div className="App" id={darkMode}>
-    //     <Header
-    //       setDarkMode={setDarkMode}
-    //       darkMode={darkMode}
-    //       toggleTheme={toggleTheme}
-    //     />
-    //     <h1>page loading</h1>
-    //     <div className="switch"></div>
-    //     <input
+    <div className="App" id={darkMode}>
+    <Header
+     setDarkMode={setDarkMode}
+    darkMode={darkMode}
+          toggleTheme={toggleTheme}
+       />
+      <h1>page loading</h1>
+       <div className="switch"></div>
+       <input
     //       type="text"
     //       name="search"
     //       id="search"

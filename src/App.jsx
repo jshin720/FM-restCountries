@@ -72,7 +72,7 @@ function App() {
       <Route path="/countries/:name" children={<Country/>}>
       </Route>
     </Router>
-    // <ThemeContext.Provider value={{ darkMode, toggleTheme }}>
+    <ThemeContext.Provider value={{ darkMode, toggleTheme }}>
     //   <div className="App" id={darkMode}>
     //     <Header
     //       setDarkMode={setDarkMode}

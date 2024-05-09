@@ -72,6 +72,7 @@ function App() {
       <Route path="/countries/:name" children={<Country/>}>
       </Route>
     </Router>
+
     <ThemeContext.Provider value={{ darkMode, toggleTheme }}>
     <div className="App" id={darkMode}>
     <Header
@@ -82,13 +83,13 @@ function App() {
       <h1>page loading</h1>
        <div className="switch"></div>
        <input
-    //       type="text"
-    //       name="search"
-    //       id="search"
-    //       placeholder="Search For A Country"
-    //       value={keyword}
-    //       onChange={handleOnChange}
-    //     />
+           type="text"
+        name="search"
+        id="search"
+        placeholder="Search For A Country"
+       value={keyword}
+         onChange={handleOnChange}
+      />
     //     <label htmlFor="filter">Filter by Region</label>
     //     <select
     //       name="filter"
@@ -104,8 +105,8 @@ function App() {
     //     </select>
     //     <div>
     //       <Search keyword={keyword} filter={filter} searchType={searchType} />
-    //     </div>
-    //   </div>
+     </div>
+     </div>
     // </ThemeContext.Provider>
 
     // <Routes>

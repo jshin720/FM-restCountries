@@ -104,7 +104,7 @@ function App() {
          ))}
      </select>
      <div>
-    //       <Search keyword={keyword} filter={filter} searchType={searchType} />
+        <Search keyword={keyword} filter={filter} searchType={searchType} />
      </div>
      </div>
     </ThemeContext.Provider>

@@ -80,16 +80,16 @@ function App() {
     // darkMode={darkMode}
     //       toggleTheme={toggleTheme}
     //    />
-      <h1>page loading</h1>
-       <div className="switch"></div>
-       <input
-           type="text"
-        name="search"
-        id="search"
-        placeholder="Search For A Country"
-       value={keyword}
-         onChange={handleOnChange}
-      />
+      // <h1>page loading</h1>
+      //  <div className="switch"></div>
+      //  <input
+      //      type="text"
+      //   name="search"
+      //   id="search"
+      //   placeholder="Search For A Country"
+      //  value={keyword}
+      //    onChange={handleOnChange}
+      // />
        <label htmlFor="filter">Filter by Region</label>
      <select
        name="filter"

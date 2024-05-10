@@ -90,24 +90,24 @@ function App() {
       //  value={keyword}
       //    onChange={handleOnChange}
       // />
-       <label htmlFor="filter">Filter by Region</label>
-     <select
-       name="filter"
-          id="filter"
-         value={filter}
-         onChange={handleOnChange}
-       >
-       {options.map((option, i) => (
-        <option value={option.value} key={i}>
-           {option.label}
-          </option>
-         ))}
-     </select>
-     <div>
-        <Search keyword={keyword} filter={filter} searchType={searchType} />
-     </div>
-     </div>
-    </ThemeContext.Provider>
+    //    <label htmlFor="filter">Filter by Region</label>
+    //  <select
+    //    name="filter"
+    //       id="filter"
+    //      value={filter}
+    //      onChange={handleOnChange}
+    //    >
+    //    {options.map((option, i) => (
+    //     <option value={option.value} key={i}>
+    //        {option.label}
+    //       </option>
+    //      ))}
+    //  </select>
+    //  <div>
+    //     <Search keyword={keyword} filter={filter} searchType={searchType} />
+    //  </div>
+    //  </div>
+    // </ThemeContext.Provider>
 
     // <Routes>
     //   <Route path="/countries" component={Search} />

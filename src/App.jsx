@@ -42,7 +42,7 @@ function App() {
   ];
 
   const handleOnChange = (e) => {
-    // console.log("e", e.target.id);
+    console.log("e", e.target.id);
 
     setSearchType(e.target.id);
     console.log("searchType-before", searchType, filter, keyword);
@@ -54,7 +54,7 @@ function App() {
       setFilter(e.target.value);
       setKeyWord("");
     }
-    // console.log("searchType-after", searchType, filter, keyword);
+    console.log("searchType-after", searchType, filter, keyword);
   };
 
   const toggleTheme = () => {

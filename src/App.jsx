@@ -73,46 +73,46 @@ function App() {
       </Route>
     </Router>
 
-    // <ThemeContext.Provider value={{ darkMode, toggleTheme }}>
-    // <div className="App" id={darkMode}>
-    // <Header
-    //  setDarkMode={setDarkMode}
-    // darkMode={darkMode}
-    //       toggleTheme={toggleTheme}
-    //    />
-      // <h1>page loading</h1>
-      //  <div className="switch"></div>
-      //  <input
-      //      type="text"
-      //   name="search"
-      //   id="search"
-      //   placeholder="Search For A Country"
-      //  value={keyword}
-      //    onChange={handleOnChange}
-      // />
-    //    <label htmlFor="filter">Filter by Region</label>
-    //  <select
-    //    name="filter"
-    //       id="filter"
-    //      value={filter}
-    //      onChange={handleOnChange}
-    //    >
-    //    {options.map((option, i) => (
-    //     <option value={option.value} key={i}>
-    //        {option.label}
-    //       </option>
-    //      ))}
-    //  </select>
-    //  <div>
-    //     <Search keyword={keyword} filter={filter} searchType={searchType} />
-    //  </div>
-    //  </div>
-    // </ThemeContext.Provider>
+    <ThemeContext.Provider value={{ darkMode, toggleTheme }}>
+    <div className="App" id={darkMode}>
+    <Header
+     setDarkMode={setDarkMode}
+    darkMode={darkMode}
+          toggleTheme={toggleTheme}
+       />
+      <h1>page loading</h1>
+       <div className="switch"></div>
+       <input
+           type="text"
+        name="search"
+        id="search"
+        placeholder="Search For A Country"
+       value={keyword}
+         onChange={handleOnChange}
+      />
+       <label htmlFor="filter">Filter by Region</label>
+     <select
+       name="filter"
+          id="filter"
+         value={filter}
+         onChange={handleOnChange}
+       >
+       {options.map((option, i) => (
+        <option value={option.value} key={i}>
+           {option.label}
+          </option>
+         ))}
+     </select>
+     <div>
+        <Search keyword={keyword} filter={filter} searchType={searchType} />
+     </div>
+     </div>
+    </ThemeContext.Provider>
 
-    // <Routes>
-    //   <Route path="/countries" component={Search} />
-    //   <Route path="/countries/:id" component={Country} />
-    // </Routes>
+    <Routes>
+      <Route path="/countries" component={Search} />
+      <Route path="/countries/:id" component={Country} />
+    </Routes>
   );
 }
 

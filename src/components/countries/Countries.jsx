@@ -32,6 +32,15 @@ function Countries() {
   const removeCountry = (id) => {
     const newCountry = countries.filter((country) => country.id !== i)
     setCountries(newCountry);
+    };
+    return (
+      <div className="countries">
+        {countries.map((country) => (
+          <div className="country" key={country.id}>
+            <Link to={`/countries/${country.id}`}>
+              <img src={country.flags.png} alt={country.name.common} />
+            </Link>
+      </div>
   }
   // console.log("aftersort", countries)
   return (

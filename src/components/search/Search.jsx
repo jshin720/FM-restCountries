@@ -17,6 +17,7 @@ function Search({ keyword, filter, searchType }) {
           cName.parentElement.style.display = "block";
         } else {
           cName.parentElement.style.display = "none";
+          
         }
       });
     });
@@ -24,6 +25,7 @@ function Search({ keyword, filter, searchType }) {
   const searchResults = () => {
     const sResults = countries.filter((country) =>
       country.name.toLowerCase().includes(keyword.toLowerCase())
+
     );
     const fResult = countries.filter((country) => country.region === filter);
 
@@ -37,6 +39,7 @@ function Search({ keyword, filter, searchType }) {
                 <Country country={country} /> 
                 <span>
                   <p className="country-name">{country.name}</p>
+
                   <p className="country-population">
                     Population: {country.population}
                   </p>
@@ -52,6 +55,7 @@ function Search({ keyword, filter, searchType }) {
       }
       return (
         <div>
+
           {fResult.map((country, i) => {
             return (
               <div className="country-container" key={i}>

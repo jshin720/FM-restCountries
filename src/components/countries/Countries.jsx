@@ -40,6 +40,14 @@ function Countries() {
             <Link to={`/countries/${country.id}`}>
               <img src={country.flags.png} alt={country.name.common} />
             </Link>
+            <div className="country-info">
+              <h3>{country.name.common}</h3>
+              <ul>  
+                <li>
+                  <strong>Native Name: </strong>
+                </li>
+              </ul>
+            </div>
       </div>
   }
   // console.log("aftersort", countries)

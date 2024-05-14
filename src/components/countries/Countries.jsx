@@ -48,14 +48,12 @@ function Countries() {
                 </li>
                 <li>
                   <strong>Population: </strong>
-                  </li>
-                  <li>
-                    <strong>Region: </strong>
-                    </li>
-                    <li>
-                      <strong>Sub Region: </strong>
-                      </li>
-                      
+                </li>
+                <li>
+                  <strong>Region: </strong>
+                </li>
+                <li>
+                  <strong>Sub Region: </strong>
                 </li>
               </ul>
             </div>

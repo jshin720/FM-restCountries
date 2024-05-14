@@ -46,6 +46,12 @@ function Countries() {
                 <li>
                   <strong>Native Name: </strong>
                 </li>
+                <li>
+                  <strong>Population: </strong>
+                  </li>
+                  <li>
+                    <strong>Region: </strong>
+                </li>
               </ul>
             </div>
       </div>

@@ -51,6 +51,11 @@ function Countries() {
                   </li>
                   <li>
                     <strong>Region: </strong>
+                    </li>
+                    <li>
+                      <strong>Sub Region: </strong>
+                      </li>
+                      
                 </li>
               </ul>
             </div>

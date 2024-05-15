@@ -42,20 +42,10 @@ function Countries() {
             </Link>
             <div className="country-info">
               <h3>{country.name.common}</h3>
-              <ul>  
-                <li>
-                  <strong>Native Name: </strong>
-                </li>
-                <li>
-                  <strong>Population: </strong>
-                </li>
-                <li>
-                  <strong>Region: </strong>
-                </li>
-                <li>
-                  <strong>Sub Region: </strong>
-                </li>
+
+
               </ul>
+
             </div>
       </div>
   }
@@ -65,6 +55,7 @@ function Countries() {
       {countries.map((country, i) => {
         const { flags, name } = country;
         console.log(country);
+
 
         return (
           <article key={i}>

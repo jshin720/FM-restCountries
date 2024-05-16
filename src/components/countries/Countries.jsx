@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-// import countries from "../../data.json";
+import countries from "../../data.json";
 const url = "https://restcountries.com/v3.1/all";
 
 function Countries() {

@@ -34,7 +34,7 @@ function Countries() {
     setCountries(newCountry);
     };
    
-  // console.log("aftersort", countries)
+  console.log("aftermost", countries)
   return (
     <section className="country-grid">
       {countries.map((country, i) => {

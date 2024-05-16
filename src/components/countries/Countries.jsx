@@ -31,7 +31,8 @@ function Countries() {
   });
   const removeCountry = (id) => {
     const newCountry = countries.filter((country) => country.id !== i)
-    setCountries(newCountry);
+    // setCountries(newCountry);
+    console.log(newCountry)
     };
    
   console.log("aftermost", countries)

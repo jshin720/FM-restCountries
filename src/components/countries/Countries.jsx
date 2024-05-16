@@ -38,7 +38,7 @@ function Countries() {
   return (
     <section className="country-grid">
       {countries.map((country, i) => {
-        const { flags, name } = country;
+        // const { flags, name } = country;
         console.log(country);
 
 
@@ -63,7 +63,7 @@ function Countries() {
                   <span className="country-details">{country.capital}</span>
                 </h4>
                 <Link to={`/countries/${name}`}>Learn More</Link>
-                <button className="country-btn" onClick={removeCountry(i)}>Revmore Country</button>
+                <button className="country-btn" onClick={removeCountry(i)}>Remove Country</button>
               </div>
             </div>
           </article>

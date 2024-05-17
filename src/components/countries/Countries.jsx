@@ -8,13 +8,16 @@ function Countries() {
 
   const countriesSorted = countries.sort(
     (a, b) => a.name.common > b.name.common
+
   );
 
   const fetchCountryData = async () => {
     const res = await fetch(url);
     const countries = await res.json();
-
+    console.log(countries)
+    console.log(res)
     setCountries(countries);
+
   };
 
   useEffect(() => {

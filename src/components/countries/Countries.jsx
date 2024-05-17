@@ -42,7 +42,7 @@ function Countries() {
   return (
     <section className="country-grid">
       {countries.map((country, i) => {
-        // const { flags, name } = country;
+        const { flags, name } = country;
         console.log(country);
 
 

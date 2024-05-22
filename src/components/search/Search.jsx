@@ -16,7 +16,8 @@ function Search({ keyword, filter, searchType }) {
         if (cName.innerText.toLowerCase().includes(value.toLowerCase())) {
           cName.parentElement.style.display = "block";
         } else {
-          cName.parentElement.style.display = "none";
+          // cName.parentElement.style.display = "none";
+          console.log(cName)
           
         }
       });

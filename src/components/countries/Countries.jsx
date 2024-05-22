@@ -36,14 +36,14 @@ function Countries() {
     const newCountry = countries.filter((country) => country.id !== i)
     console.log(newCountry)
     // setCountries(newCountry);
-    
+
     };
    
   console.log("aftermost", countries)
   return (
     <section className="country-grid">
       {countries.map((country, i) => {
-        const { flags, name } = country;
+        // const { flags, name } = country;
         console.log(country);
 
 
